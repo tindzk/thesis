@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     Alignment
+Instances:    33064
+Attributes:   12
+              offsetRatio
+              lengthRatio
+              posSimilarity
+              orthSimilarity
+              lemmaSimilarity
+              dictCorrespondences
+              sourceChildren
+              targetChildren
+              childrenRatio
+              depthDiff
+              depthRatio
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=12 #classindex=11
+Network structure (nodes followed by parents)
+offsetRatio(6): class 
+lengthRatio(3): class 
+posSimilarity(2): class 
+orthSimilarity(1): class 
+lemmaSimilarity(1): class 
+dictCorrespondences(2): class 
+sourceChildren(2): class 
+targetChildren(2): class 
+childrenRatio(4): class 
+depthDiff(3): class 
+depthRatio(5): class 
+class(2): 
+LogScore Bayes: -268138.9346066865
+LogScore BDeu: -268206.1066049038
+LogScore MDL: -268238.36584232276
+LogScore ENTROPY: -268025.0387350208
+LogScore AIC: -268066.0387350208
+
+
+Time taken to build model: 0.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       31650               95.7234 %
+Incorrectly Classified Instances      1414                4.2766 %
+Kappa statistic                          0.5684
+Mean absolute error                      0.0472
+Root mean squared error                  0.1714
+Relative absolute error                 68.1579 %
+Root relative squared error             92.1047 %
+Coverage of cases (0.95 level)          99.5282 %
+Mean rel. region size (0.95 level)      55.0826 %
+Total Number of Instances            33064     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,961    0,147    0,994      0,961    0,977      0,601    0,983     0,999     0.0
+                 0,853    0,039    0,450      0,853    0,589      0,601    0,983     0,742     1.0
+Weighted Avg.    0,957    0,144    0,975      0,957    0,963      0,601    0,983     0,990     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 30638  1239 |     a = 0.0
+   175  1012 |     b = 1.0
+

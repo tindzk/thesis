@@ -1,0 +1,1575 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     Adpositions
+Instances:    189
+Attributes:   7
+              deLemma
+              dePOS
+              deArgumentPOS
+              deArgumentCase
+              deDependencyLemma
+              deDependencyPOS
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+
+deLemma = in: LM_1:4/8 (43)
+deLemma = zu: LM_2:4/8 (18)
+deLemma = nach: LM_3:4/8 (19)
+deLemma = über: LM_4:4/8 (20)
+deLemma = um: LM_5:4/8 (18)
+deLemma = auf: LM_6:4/8 (20)
+deLemma = mit: LM_7:4/8 (18)
+deLemma = an: LM_8:4/8 (33)
+
+Number of Leaves  :   8
+
+Size of the Tree :  9
+
+LM_1:
+Class 0 :
+-4.89 + 
+[deLemma=über] * 2.92 +
+[deArgumentPOS=Article] * -0.01 +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=sein] * 0.01 +
+[deDependencyLemma=finden] * 0    +
+[deDependencyLemma=Meinung] * 3.05
+
+Class 1 :
+0.18 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=nehmen] * 2.79 +
+[deDependencyLemma=einteilen] * 5.16 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyPOS=Verb] * -2.48
+
+Class 2 :
+-7.73 + 
+[deArgumentPOS=Article] * 0    +
+[deDependencyLemma=sein] * 0    +
+[deDependencyLemma=stolz] * 11.06 +
+[deDependencyLemma=finden] * 0   
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Verb] * 0    +
+[deArgumentPOS=Adjective] * 5.75 +
+[deDependencyLemma=sein] * 1.83
+
+Class 4 :
+-5.27 + 
+[dePOS=Conjunction] * 5.85 +
+[deArgumentPOS=Pronoun] * 3.53 +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=none] * 4.15
+
+Class 5 :
+-5.93 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deDependencyLemma=sein] * 1.45 +
+[deDependencyLemma=beginnen] * 2.89
+
+Class 6 :
+-7.86 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 2.91 +
+[deArgumentCase=Dative] * 1.49 +
+[deDependencyLemma=sein] * 5.16
+
+Class 7 :
+0.41 + 
+[dePOS=Verb] * 1.77 +
+[dePOS=Adposition] * -5.74 +
+[dePOS=Conjunction] * -1.77 +
+[deArgumentPOS=Article] * 0    +
+[deDependencyLemma=sein] * 0.01 +
+[deDependencyLemma=finden] * 0   
+
+Class 8 :
+-7.73 + 
+[deArgumentPOS=Article] * 0    +
+[deDependencyLemma=geschehen] * 11.65 +
+[deDependencyLemma=sein] * 0    +
+[deDependencyLemma=finden] * 0   
+
+Class 9 :
+-6.31 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.48 +
+[deDependencyLemma=beginnen] * -1.6
+
+Class 10 :
+-5.68 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.19 +
+[deArgumentPOS=Article] * 3.81 +
+[deDependencyLemma=sein] * 5.31 +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+-6.09 + 
+[deLemma=an] * 2.29 +
+[deArgumentPOS=Article] * -0.01 +
+[deArgumentCase=Dative] * 1.65 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16 +
+[deDependencyLemma=finden] * 0   
+
+Class 12 :
+-2.94 + 
+[dePOS=Adposition] * 2.48 +
+[deArgumentPOS=Noun] * -1.43 +
+[deArgumentCase=Accusative] * 3.31 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 3.76 +
+[deDependencyLemma=bringen] * 2.92
+
+Class 13 :
+-7.73 + 
+[deArgumentPOS=Article] * 0    +
+[deDependencyLemma=sein] * 0    +
+[deDependencyLemma=aber] * 10.82 +
+[deDependencyLemma=finden] * 0   
+
+Class 14 :
+-1.02 + 
+[deArgumentPOS=Number] * 2.22 +
+[deArgumentPOS=Pronoun] * 1.47 +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=schiefgehen] * 3.04 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=beginnen] * 2.72 +
+[deDependencyLemma=werden] * 3.07 +
+[deDependencyLemma=none] * 1.8 
+
+Class 15 :
+-1.17 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deArgumentPOS=Noun] * 1    +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 2.06 +
+[deDependencyLemma=erzählt] * 2.28 +
+[deDependencyLemma=finden] * 2.04 +
+[deDependencyLemma=Stützpunkt] * 2.93
+
+Class 16 :
+-7.73 + 
+[deArgumentPOS=Article] * 0    +
+[deDependencyLemma=Drehung] * 10.87 +
+[deDependencyLemma=sein] * 0    +
+[deDependencyLemma=finden] * 0   
+
+Class 17 :
+-5.6 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 1.95 +
+[deDependencyLemma=schreiben] * 3.14
+
+Class 18 :
+-5.22 + 
+[deArgumentPOS=Article] * 0    +
+[deArgumentCase=Genitive] * 3.33 +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=sein] * 0.01 +
+[deDependencyLemma=finden] * 0    +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-1.36 + 
+[deLemma=auf] * 1.62 +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=wärt] * 5.65 +
+[deDependencyLemma=bläst] * 6.09 +
+[deDependencyLemma=kümmere] * 5.3 
+
+Class 20 :
+-7.83 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.18 +
+[deDependencyLemma=beginnen] * 5.05
+
+Class 21 :
+-6.4 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deArgumentCase=none] * -0.01 +
+[deDependencyLemma=sein] * 2.46 +
+[deDependencyLemma=einteilen] * -0.03
+
+Class 22 :
+-6.13 + 
+[deLemma=über] * 2.27 +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=gehen] * 2.31 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.79 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 3.3 
+
+LM_2:
+Class 0 :
+-4.87 + 
+[deLemma=über] * 2.92 +
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * -0.03 +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=Meinung] * 3.05
+
+Class 1 :
+-4.02 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deArgumentPOS=Pronoun] * -0.01 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyPOS=Verb] * -1.34
+
+Class 2 :
+-7.73 + 
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=stolz] * 11.06
+
+Class 3 :
+-7.83 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 13.57 +
+[deDependencyLemma=sein] * 1.83
+
+Class 4 :
+-5.17 + 
+[dePOS=Conjunction] * 5.85 +
+[deArgumentPOS=Pronoun] * -0.01 +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=none] * 1.75
+
+Class 5 :
+-5.92 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deArgumentPOS=Pronoun] * -0.01 +
+[deDependencyLemma=sein] * 1.45 +
+[deDependencyLemma=beginnen] * 3.01
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deDependencyLemma=sein] * 3.06
+
+Class 7 :
+4.68 + 
+[dePOS=Verb] * 1.77 +
+[dePOS=Adposition] * -5.74 +
+[dePOS=Conjunction] * -1.77 +
+[deArgumentPOS=Verb] * 1.34 +
+[deArgumentPOS=Adjective] * -3.8 +
+[deArgumentCase=none] * 1.73
+
+Class 8 :
+-7.73 + 
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=geschehen] * 11.65
+
+Class 9 :
+-6.31 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.46 +
+[deDependencyLemma=beginnen] * -1.6
+
+Class 10 :
+-5.51 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.15 +
+[deDependencyLemma=sein] * 1.9  +
+[deDependencyLemma=stolpern] * 3    +
+[deDependencyPOS=Verb] * 0   
+
+Class 11 :
+-6.08 + 
+[deLemma=an] * 2.29 +
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * -0.04 +
+[deArgumentCase=Dative] * 1.67 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16
+
+Class 12 :
+-1.87 + 
+[dePOS=Adposition] * 6.38 +
+[deArgumentPOS=Pronoun] * 2.49 +
+[deArgumentCase=none] * -1.92 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 2.14 +
+[deDependencyLemma=bringen] * 2.92
+
+Class 13 :
+-7.73 + 
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=aber] * 10.82
+
+Class 14 :
+-4.41 + 
+[deArgumentPOS=Number] * 2.22 +
+[deArgumentPOS=Pronoun] * -0.17 +
+[deArgumentCase=Dative] * 1.26 +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=none] * 1.8 
+
+Class 15 :
+-4.62 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 2.05 +
+[deDependencyPOS=Verb] * -0.03
+
+Class 16 :
+-7.73 + 
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=Drehung] * 10.87
+
+Class 17 :
+-5.6 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 1.9  +
+[deDependencyLemma=schreiben] * 3.14
+
+Class 18 :
+-5.2 + 
+[deArgumentPOS=Pronoun] * -0.02 +
+[deArgumentCase=Genitive] * 3.33 +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-3.69 + 
+[deLemma=auf] * 1.62 +
+[deArgumentPOS=Pronoun] * -0.09 +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=kümmere] * 5.3 
+
+Class 20 :
+-7.82 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.17 +
+[deDependencyLemma=beginnen] * 5.22
+
+Class 21 :
+-6.39 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deDependencyLemma=sein] * 2.46
+
+Class 22 :
+-6.12 + 
+[deLemma=über] * 2.27 +
+[deArgumentPOS=Pronoun] * -0.01 +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=gehen] * 2.35 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.79 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 3.31
+
+LM_3:
+Class 0 :
+-1.75 + 
+[deLemma=über] * 2.92 +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=fragen] * 4.14 +
+[deDependencyLemma=Meinung] * 6.06
+
+Class 1 :
+-4.09 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.65 +
+[deArgumentPOS=Adverb] * -0.07 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyPOS=Verb] * -1.34
+
+Class 2 :
+-7.73 + 
+[deArgumentCase=Dative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=stolz] * 11.06 +
+[deDependencyLemma=none] * 0   
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 5.75 +
+[deArgumentCase=Dative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=sein] * 1.83 +
+[deDependencyLemma=none] * 0   
+
+Class 4 :
+-5.2 + 
+[dePOS=Conjunction] * 5.85 +
+[deArgumentCase=Dative] * 0    +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=none] * 1.68
+
+Class 5 :
+-5.94 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deArgumentCase=Dative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=sein] * 1.45 +
+[deDependencyLemma=beginnen] * 3.01 +
+[deDependencyLemma=none] * 0.01
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deArgumentCase=Dative] * 0    +
+[deDependencyLemma=sein] * 3.06 +
+[deDependencyLemma=sehen] * 0   
+
+Class 7 :
+0.38 + 
+[dePOS=Verb] * 1.77 +
+[dePOS=Adposition] * -5.74 +
+[dePOS=Conjunction] * -1.77 +
+[deArgumentCase=Dative] * 0.01 +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=none] * 0.01
+
+Class 8 :
+-7.74 + 
+[deArgumentCase=Dative] * 0    +
+[deDependencyLemma=geschehen] * 11.65 +
+[deDependencyLemma=none] * 0   
+
+Class 9 :
+-6.33 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.48 +
+[deDependencyLemma=wild] * 0    +
+[deDependencyLemma=schauen] * -0.02 +
+[deDependencyLemma=beginnen] * -1.6
+
+Class 10 :
+-5.53 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.16 +
+[deDependencyLemma=wild] * 0    +
+[deDependencyLemma=schauen] * -0.03 +
+[deDependencyLemma=sein] * 1.9  +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+-6.14 + 
+[deLemma=an] * 2.29 +
+[deArgumentCase=Dative] * 1.67 +
+[deArgumentCase=none] * 0.04 +
+[deDependencyLemma=wild] * 0    +
+[deDependencyLemma=schauen] * -0.03 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16
+
+Class 12 :
+-1.18 + 
+[dePOS=Adposition] * 2.48 +
+[deArgumentPOS=Noun] * 2.64 +
+[deArgumentPOS=Pronoun] * -2.08 +
+[deArgumentPOS=Adverb] * 1.65 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 2.14 +
+[deDependencyLemma=bringen] * 2.92 +
+[deDependencyLemma=sehen] * -3.25
+
+Class 13 :
+-7.74 + 
+[deArgumentCase=Dative] * 0    +
+[deDependencyLemma=aber] * 10.82 +
+[deDependencyLemma=none] * 0   
+
+Class 14 :
+-2.17 + 
+[deArgumentPOS=Number] * 2.22 +
+[deArgumentPOS=Article] * 6.19 +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=none] * 4.12
+
+Class 15 :
+-4.7 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deArgumentCase=Dative] * 0.02 +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 2.06 +
+[deDependencyLemma=none] * 0.03
+
+Class 16 :
+-7.73 + 
+[deArgumentCase=Dative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=Drehung] * 10.87 +
+[deDependencyLemma=none] * 0   
+
+Class 17 :
+-5.71 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 2.03 +
+[deDependencyLemma=schreiben] * 3.14 +
+[deDependencyLemma=fragen] * 6.58
+
+Class 18 :
+-5.24 + 
+[deArgumentCase=Genitive] * 3.33 +
+[deArgumentCase=Dative] * 0    +
+[deArgumentCase=none] * -0.01 +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=none] * 0.01 +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-1.41 + 
+[deLemma=auf] * 1.62 +
+[deArgumentCase=Dative] * 1.61 +
+[deDependencyLemma=wild] * 2.79 +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=schauen] * 3.36 +
+[deDependencyLemma=kümmere] * 5.3  +
+[deDependencyLemma=sehen] * 3.01
+
+Class 20 :
+-7.83 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.17 +
+[deDependencyLemma=wild] * 0    +
+[deDependencyLemma=schauen] * -0.01 +
+[deDependencyLemma=beginnen] * 5.22
+
+Class 21 :
+-6.4 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deArgumentCase=Dative] * 0    +
+[deDependencyLemma=sein] * 2.46 +
+[deDependencyLemma=none] * 0   
+
+Class 22 :
+-6.14 + 
+[deLemma=über] * 2.27 +
+[deArgumentCase=Dative] * 0.01 +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=gehen] * 2.33 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.79 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 3.28
+
+LM_4:
+Class 0 :
+1.22 + 
+[deLemma=über] * 2.92 +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=denken] * 1.81 +
+[deDependencyLemma=gehen] * -1.36 +
+[deDependencyLemma=none] * -2.61 +
+[deDependencyLemma=Meinung] * 3.05 +
+[deDependencyPOS=Verb] * -1.93
+
+Class 1 :
+-4.04 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=Theorie] * -0.24 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyPOS=Verb] * -1.34
+
+Class 2 :
+-7.73 + 
+[deDependencyLemma=denken] * 0    +
+[deDependencyLemma=stolz] * 11.06
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 5.75 +
+[deDependencyLemma=sein] * 1.82
+
+Class 4 :
+-5.17 + 
+[dePOS=Conjunction] * 5.85 +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=denken] * 0    +
+[deDependencyLemma=none] * 1.72
+
+Class 5 :
+-5.92 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deDependencyLemma=sein] * 1.44 +
+[deDependencyLemma=beginnen] * 3.01
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deDependencyLemma=sein] * 3   
+
+Class 7 :
+0.41 + 
+[dePOS=Verb] * 1.77 +
+[dePOS=Adposition] * -5.74 +
+[dePOS=Conjunction] * -1.77 +
+[deDependencyLemma=denken] * -0.01
+
+Class 8 :
+-7.73 + 
+[deDependencyLemma=geschehen] * 11.65 +
+[deDependencyLemma=denken] * 0   
+
+Class 9 :
+-6.31 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.49 +
+[deDependencyLemma=denken] * 0    +
+[deDependencyLemma=beginnen] * -1.6 +
+[deDependencyLemma=lustig] * 0   
+
+Class 10 :
+-1.7 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.19 +
+[deArgumentPOS=Article] * -1.29 +
+[deDependencyLemma=gehen] * 2.2  +
+[deDependencyLemma=sein] * 4.06 +
+[deDependencyLemma=none] * 2.89 +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+-6.08 + 
+[deLemma=an] * 2.29 +
+[deArgumentCase=Dative] * 1.67 +
+[deDependencyLemma=denken] * 0    +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16
+
+Class 12 :
+-5.28 + 
+[dePOS=Adposition] * 2.48 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=denken] * -0.05 +
+[deDependencyLemma=gehen] * 1.33 +
+[deDependencyLemma=bringen] * 2.92
+
+Class 13 :
+-7.73 + 
+[deDependencyLemma=denken] * 0    +
+[deDependencyLemma=aber] * 10.82
+
+Class 14 :
+-4.42 + 
+[deArgumentPOS=Number] * 1.02 +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=denken] * 0    +
+[deDependencyLemma=none] * 1.78
+
+Class 15 :
+-4.64 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 1.93
+
+Class 16 :
+-7.73 + 
+[deDependencyLemma=Drehung] * 10.87 +
+[deDependencyLemma=denken] * 0   
+
+Class 17 :
+-3.45 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 2.03 +
+[deDependencyLemma=lachen] * 4.51 +
+[deDependencyLemma=schreiben] * 6.98
+
+Class 18 :
+-5.21 + 
+[deArgumentCase=Genitive] * 13.07 +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-3.71 + 
+[deLemma=auf] * 1.62 +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=denken] * -0.05 +
+[deDependencyLemma=kümmere] * 5.3  +
+[deDependencyPOS=Verb] * 0   
+
+Class 20 :
+-7.83 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.18 +
+[deDependencyLemma=beginnen] * 5.22 +
+[deDependencyLemma=lustig] * 0    +
+[deDependencyPOS=Verb] * 0   
+
+Class 21 :
+-6.51 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 12.78 +
+[deDependencyLemma=sein] * 2.46
+
+Class 22 :
+-1.84 + 
+[deLemma=über] * 2.27 +
+[deArgumentPOS=Pronoun] * -1.51 +
+[deArgumentPOS=Article] * 2.03 +
+[deDependencyLemma=flüchten] * 4.94 +
+[deDependencyLemma=denken] * -2 +
+[deDependencyLemma=gehen] * 2.35 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.79 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 3.21
+
+LM_5:
+Class 0 :
+-4.87 + 
+[deLemma=über] * 2.92 +
+[dePOS=Adposition] * -0.01 +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=Meinung] * 3.05
+
+Class 1 :
+-4.02 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=Sorge] * -0.03 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyPOS=Verb] * -1.34
+
+Class 2 :
+-7.73 + 
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=stolz] * 11.06
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 5.74 +
+[deDependencyLemma=sein] * 1.83
+
+Class 4 :
+-1.89 + 
+[dePOS=Conjunction] * 9.24 +
+[deArgumentCase=Nominative] * -5.23 +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=none] * 1.75
+
+Class 5 :
+-5.92 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=sein] * 1.44 +
+[deDependencyLemma=beginnen] * 3.01
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deDependencyLemma=sein] * 3.05
+
+Class 7 :
+0.32 + 
+[dePOS=Verb] * 9.57 +
+[dePOS=Adposition] * -5.74 +
+[dePOS=Conjunction] * -1.77
+
+Class 8 :
+-7.73 + 
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=geschehen] * 11.65
+
+Class 9 :
+-6.31 + 
+[deLemma=mit] * 5.48 +
+[dePOS=Adposition] * -0.01 +
+[deArgumentPOS=Pronoun] * 1.5  +
+[deDependencyLemma=beginnen] * -1.6
+
+Class 10 :
+-5.52 + 
+[deLemma=über] * 2.41 +
+[dePOS=Adposition] * -0.01 +
+[deArgumentPOS=Pronoun] * 1.19 +
+[deDependencyLemma=sein] * 1.87 +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+-6.08 + 
+[deLemma=an] * 2.29 +
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=Dative] * 1.67 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16
+
+Class 12 :
+-5.17 + 
+[dePOS=Adposition] * 2.48 +
+[deArgumentPOS=Pronoun] * -0.03 +
+[deArgumentCase=Accusative] * -0.08 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 2.14 +
+[deDependencyLemma=bringen] * 2.92
+
+Class 13 :
+-7.73 + 
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=aber] * 10.82
+
+Class 14 :
+-4.4 + 
+[deArgumentPOS=Number] * 6.67 +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=none] * 5.5 
+
+Class 15 :
+-4.63 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[dePOS=Adposition] * 0    +
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 1.93
+
+Class 16 :
+-7.73 + 
+[deDependencyLemma=Drehung] * 18.58
+
+Class 17 :
+-1.52 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 3.37 +
+[deArgumentCase=Nominative] * 2.31 +
+[deDependencyLemma=schreiben] * 3.14 +
+[deDependencyLemma=kommen] * -1.44 +
+[deDependencyLemma=kümmere] * -1.25
+
+Class 18 :
+-5.2 + 
+[dePOS=Adposition] * -0.01 +
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=Genitive] * 3.33 +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-3.71 + 
+[deLemma=auf] * 1.62 +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=kümmere] * 13.2
+
+Class 20 :
+-7.82 + 
+[deLemma=mit] * 2.12 +
+[dePOS=Adposition] * -0.01 +
+[deArgumentPOS=Pronoun] * 2.18 +
+[deDependencyLemma=beginnen] * 5.22
+
+Class 21 :
+-6.56 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deDependencyLemma=sein] * 11.41
+
+Class 22 :
+-6.12 + 
+[deLemma=über] * 2.27 +
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=gehen] * 2.35 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.79 + 
+[deLemma=auf] * 2.03 +
+[dePOS=Adposition] * 0    +
+[deArgumentPOS=Number] * -0.01 +
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 3.31
+
+LM_6:
+Class 0 :
+-4.89 + 
+[deLemma=über] * 2.92 +
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=schießen] * 0.01 +
+[deDependencyLemma=Meinung] * 3.05
+
+Class 1 :
+-4.08 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyLemma=direkt] * 0    +
+[deDependencyLemma=Ruder] * -0.28 +
+[deDependencyPOS=Verb] * -1.34
+
+Class 2 :
+-7.73 + 
+[deDependencyLemma=stolz] * 18.75
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 5.75 +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=sein] * 1.83
+
+Class 4 :
+-5.18 + 
+[dePOS=Conjunction] * 5.85 +
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=none] * 1.73
+
+Class 5 :
+-5.93 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=sein] * 1.44 +
+[deDependencyLemma=beginnen] * 3.01
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deDependencyLemma=sein] * 3.05
+
+Class 7 :
+2.36 + 
+[dePOS=Verb] * 7.59 +
+[dePOS=Adposition] * -7.7 +
+[dePOS=Conjunction] * -1.77
+
+Class 8 :
+-7.73 + 
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=schießen] * 0    +
+[deDependencyLemma=geschehen] * 11.65
+
+Class 9 :
+-6.31 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.5  +
+[deDependencyLemma=beginnen] * -1.6 +
+[deDependencyLemma=direkt] * -0.03
+
+Class 10 :
+-5.52 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.19 +
+[deDependencyLemma=sein] * 1.89 +
+[deDependencyLemma=direkt] * -0.03 +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+-6.1 + 
+[deLemma=an] * 2.29 +
+[deArgumentCase=Dative] * 1.67 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 12.33
+
+Class 12 :
+-0.88 + 
+[dePOS=Adposition] * 2.48 +
+[deArgumentCase=Accusative] * 1.44 +
+[deArgumentCase=none] * -2.39 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 2.14 +
+[deDependencyLemma=Hinweis] * -2.64 +
+[deDependencyLemma=bringen] * 2.92 +
+[deDependencyLemma=Ruder] * 1.95
+
+Class 13 :
+-7.73 + 
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=schießen] * 0    +
+[deDependencyLemma=aber] * 10.82
+
+Class 14 :
+-4.43 + 
+[deArgumentPOS=Number] * 2.22 +
+[deArgumentPOS=Noun] * -0.06 +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=Ruder] * -0.03 +
+[deDependencyLemma=none] * 1.8 
+
+Class 15 :
+-2.83 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deArgumentCase=Dative] * 4.08 +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 2.06 +
+[deDependencyLemma=ruhen] * 3.42 +
+[deDependencyPOS=Noun] * -1.85
+
+Class 16 :
+-7.73 + 
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=Drehung] * 10.87 +
+[deDependencyLemma=schießen] * 0   
+
+Class 17 :
+-5.61 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 2.03 +
+[deDependencyLemma=schreiben] * 3.14 +
+[deDependencyLemma=direkt] * -0.09
+
+Class 18 :
+-5.22 + 
+[deArgumentCase=Genitive] * 3.33 +
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=schießen] * 0.01 +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-1.79 + 
+[deLemma=auf] * 1.62 +
+[deArgumentPOS=none] * 3.04 +
+[deArgumentCase=none] * 1.36 +
+[deDependencyLemma=warten] * 4.63 +
+[deDependencyLemma=Hinweis] * 3.3  +
+[deDependencyLemma=kümmere] * 5.3 
+
+Class 20 :
+-7.83 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.18 +
+[deDependencyLemma=beginnen] * 5.22 +
+[deDependencyLemma=direkt] * -0.01
+
+Class 21 :
+-6.39 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deDependencyLemma=sein] * 2.44
+
+Class 22 :
+-6.13 + 
+[deLemma=über] * 2.27 +
+[deArgumentCase=Accusative] * 0    +
+[deArgumentCase=none] * 0    +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=rufen] * 0    +
+[deDependencyLemma=schießen] * 0    +
+[deDependencyLemma=gehen] * 2.35 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.85 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 12.05
+
+LM_7:
+Class 0 :
+-4.88 + 
+[deLemma=über] * 2.92 +
+[deArgumentPOS=Pronoun] * 0.01 +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=Meinung] * 3.05
+
+Class 1 :
+-1.65 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyLemma=none] * 7.74 +
+[deDependencyPOS=Verb] * -3.73
+
+Class 2 :
+-7.73 + 
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=stolz] * 11.06
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 5.75 +
+[deDependencyLemma=sein] * 1.83
+
+Class 4 :
+-5.18 + 
+[dePOS=Conjunction] * 5.85 +
+[deDependencyLemma=passieren] * 12.87 +
+[deDependencyLemma=none] * 1.75
+
+Class 5 :
+-6 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deArgumentPOS=Article] * 2.51 +
+[deDependencyLemma=sein] * 1.45 +
+[deDependencyLemma=beginnen] * 5.42
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deDependencyLemma=sein] * 3.06
+
+Class 7 :
+0.41 + 
+[dePOS=Verb] * 1.77 +
+[dePOS=Adposition] * -5.74 +
+[dePOS=Conjunction] * -1.77 +
+[deArgumentPOS=Pronoun] * 0.01
+
+Class 8 :
+-7.73 + 
+[deDependencyLemma=geschehen] * 19.4
+
+Class 9 :
+-1.26 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.5  +
+[deDependencyLemma=passieren] * -2.52 +
+[deDependencyLemma=beginnen] * -4.07 +
+[deDependencyLemma=none] * -1.59
+
+Class 10 :
+-5.51 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.19 +
+[deDependencyLemma=sein] * 1.85 +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+-6.1 + 
+[deLemma=an] * 2.29 +
+[deArgumentPOS=Pronoun] * 0.01 +
+[deArgumentCase=Dative] * 1.67 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16
+
+Class 12 :
+-5.25 + 
+[dePOS=Adposition] * 2.48 +
+[deArgumentPOS=Pronoun] * 0.09 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 2.14 +
+[deDependencyLemma=bringen] * 2.92
+
+Class 13 :
+-7.73 + 
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=aber] * 10.82
+
+Class 14 :
+-4.73 + 
+[deArgumentPOS=Number] * 2.22 +
+[deArgumentPOS=Noun] * -0.01 +
+[deArgumentPOS=Pronoun] * 0    +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=none] * 1.8  +
+[deDependencyPOS=Verb] * 0.29
+
+Class 15 :
+-4.63 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 2.03
+
+Class 16 :
+-7.73 + 
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=Drehung] * 10.87
+
+Class 17 :
+-5.6 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 2.02 +
+[deDependencyLemma=schreiben] * 3.14
+
+Class 18 :
+-5.21 + 
+[deArgumentCase=Genitive] * 3.33 +
+[deDependencyLemma=erwecken] * 13.51 +
+[deDependencyLemma=fühlt] * 5.97
+
+Class 19 :
+-3.71 + 
+[deLemma=auf] * 1.62 +
+[deArgumentPOS=Pronoun] * 0.03 +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=kümmere] * 5.3 
+
+Class 20 :
+-6.73 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.95 +
+[deDependencyLemma=beginnen] * 8.79
+
+Class 21 :
+-6.39 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deDependencyLemma=sein] * 2.46
+
+Class 22 :
+-6.12 + 
+[deLemma=über] * 2.27 +
+[deArgumentPOS=Pronoun] * 0    +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=gehen] * 2.35 +
+[deDependencyLemma=spritzen] * 3.37
+
+Class 23 :
+-7.79 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=none] * 3.3 
+
+LM_8:
+Class 0 :
+-4.89 + 
+[deLemma=über] * 2.92 +
+[deArgumentCase=Accusative] * -0.02 +
+[deDependencyLemma=wissen] * 2.91 +
+[deDependencyLemma=weiß] * 2.96 +
+[deDependencyLemma=setzen] * -0.01 +
+[deDependencyLemma=fühlte] * 0    +
+[deDependencyLemma=Meinung] * 3.05
+
+Class 1 :
+-1.39 + 
+[deLemma=in] * 1.45 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=lassen] * 4.74 +
+[deDependencyLemma=helfen] * 2.96 +
+[deDependencyLemma=sollen] * 5.19 +
+[deDependencyPOS=Verb] * -1.34
+
+Class 2 :
+-7.73 + 
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=setzen] * 0    +
+[deDependencyLemma=fühlte] * 0    +
+[deDependencyLemma=stolz] * 11.06
+
+Class 3 :
+-7.82 + 
+[dePOS=Particle] * 2.9  +
+[deArgumentPOS=Adjective] * 5.75 +
+[deDependencyLemma=sein] * 1.82
+
+Class 4 :
+-5.18 + 
+[dePOS=Conjunction] * 5.85 +
+[deDependencyLemma=passieren] * 3.19 +
+[deDependencyLemma=setzen] * -0.01 +
+[deDependencyLemma=fühlte] * 0    +
+[deDependencyLemma=none] * 1.72
+
+Class 5 :
+-6.01 + 
+[deLemma=mit] * 2.24 +
+[deLemma=an] * 2.02 +
+[deDependencyLemma=sein] * 6.43 +
+[deDependencyLemma=beginnen] * 3.01
+
+Class 6 :
+-7.77 + 
+[deLemma=in] * 1.16 +
+[deArgumentPOS=Noun] * 1.32 +
+[deDependencyLemma=sein] * 2.98
+
+Class 7 :
+4.25 + 
+[dePOS=Verb] * 5.63 +
+[dePOS=Adposition] * -9.59 +
+[dePOS=Conjunction] * -1.77
+
+Class 8 :
+-7.73 + 
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=geschehen] * 11.65 +
+[deDependencyLemma=setzen] * 0    +
+[deDependencyLemma=fühlte] * 0   
+
+Class 9 :
+-6.32 + 
+[deLemma=mit] * 5.48 +
+[deArgumentPOS=Pronoun] * 1.5  +
+[deDependencyLemma=setzen] * -0.05 +
+[deDependencyLemma=beginnen] * -1.6
+
+Class 10 :
+-5.53 + 
+[deLemma=über] * 2.41 +
+[deArgumentPOS=Pronoun] * 1.19 +
+[deDependencyLemma=sein] * 1.86 +
+[deDependencyLemma=setzen] * -0.02 +
+[deDependencyLemma=stolpern] * 3   
+
+Class 11 :
+0    + 
+[deLemma=an] * 2.29 +
+[deArgumentCase=Dative] * 1.67 +
+[deDependencyLemma=treffen] * 3.03 +
+[deDependencyLemma=schicken] * 2.95 +
+[deDependencyLemma=Stechkahn] * 3.16 +
+[deDependencyLemma=sein] * 1.39 +
+[deDependencyPOS=Verb] * -3.2
+
+Class 12 :
+-5.42 + 
+[dePOS=Adposition] * 2.48 +
+[deDependencyLemma=werfen] * 9.94 +
+[deDependencyLemma=schießen] * 2.93 +
+[deDependencyLemma=gehen] * 2.14 +
+[deDependencyLemma=bringen] * 2.92
+
+Class 13 :
+-7.73 + 
+[deDependencyLemma=aber] * 18.51
+
+Class 14 :
+-2.9 + 
+[deArgumentPOS=Number] * 2.22 +
+[deArgumentCase=Dative] * 1.26 +
+[deDependencyLemma=evakuieren] * 3    +
+[deDependencyLemma=sein] * 0.78 +
+[deDependencyLemma=abschieben] * 2.84 +
+[deDependencyLemma=fühlte] * 2.73 +
+[deDependencyLemma=none] * 1.8  +
+[deDependencyPOS=Verb] * 2.5 
+
+Class 15 :
+-4.78 + 
+[deLemma=in] * 2.59 +
+[deLemma=auf] * 1.98 +
+[deDependencyLemma=als] * 3.01 +
+[deDependencyLemma=sein] * 2.06 +
+[deDependencyLemma=none] * 8.18
+
+Class 16 :
+-7.73 + 
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=Drehung] * 10.87 +
+[deDependencyLemma=setzen] * 0    +
+[deDependencyLemma=fühlte] * 0   
+
+Class 17 :
+-5.61 + 
+[deLemma=über] * 1.78 +
+[deLemma=um] * 2.58 +
+[deArgumentPOS=Pronoun] * 2.03 +
+[deDependencyLemma=setzen] * -0.18 +
+[deDependencyLemma=schreiben] * 3.14
+
+Class 18 :
+-5.22 + 
+[deArgumentCase=Genitive] * 3.33 +
+[deDependencyLemma=erwecken] * 3.57 +
+[deDependencyLemma=fühlt] * 13.88
+
+Class 19 :
+-1.11 + 
+[deLemma=auf] * 1.62 +
+[deDependencyLemma=warten] * 2.77 +
+[deDependencyLemma=setzen] * 4.71 +
+[deDependencyLemma=kümmere] * 5.3  +
+[deDependencyLemma=glauben] * 5.02
+
+Class 20 :
+-7.82 + 
+[deLemma=mit] * 2.12 +
+[deArgumentPOS=Pronoun] * 2.18 +
+[deDependencyLemma=setzen] * -0.02 +
+[deDependencyLemma=beginnen] * 5.22
+
+Class 21 :
+-6.39 + 
+[deLemma=über] * 1.82 +
+[deLemma=um] * 2.77 +
+[deArgumentPOS=Number] * 2.42 +
+[deDependencyLemma=sein] * 2.42
+
+Class 22 :
+-6.13 + 
+[deLemma=über] * 2.27 +
+[deArgumentCase=Accusative] * 0    +
+[deDependencyLemma=flüchten] * 3.27 +
+[deDependencyLemma=gehen] * 2.35 +
+[deDependencyLemma=setzen] * 0    +
+[deDependencyLemma=spritzen] * 3.37 +
+[deDependencyLemma=fühlte] * 0   
+
+Class 23 :
+-7.8 + 
+[deLemma=auf] * 2.03 +
+[deArgumentCase=Accusative] * 1.92 +
+[deDependencyLemma=setzen] * -0.01 +
+[deDependencyLemma=none] * 3.31
+
+
+Time taken to build model: 1.25 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         101               53.4392 %
+Incorrectly Classified Instances        88               46.5608 %
+Kappa statistic                          0.484 
+Mean absolute error                      0.043 
+Root mean squared error                  0.1654
+Relative absolute error                 56.377  %
+Root relative squared error             84.8478 %
+Coverage of cases (0.95 level)          81.4815 %
+Mean rel. region size (0.95 level)      15.4101 %
+Total Number of Instances              189     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,600    0,039    0,462      0,600    0,522      0,496    0,853     0,532     topical
+                 0,111    0,022    0,200      0,111    0,143      0,118    0,822     0,158     modal
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,574     0,012     attributive
+                 1,000    0,005    0,667      1,000    0,800      0,814    1,000     1,000     excessive
+                 0,429    0,016    0,500      0,429    0,462      0,444    0,781     0,468     causal
+                 0,333    0,032    0,143      0,333    0,200      0,199    0,666     0,137     process
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,604     0,013     locative:directional:local
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     prefix
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,021     0,005     consecutive
+                 1,000    0,022    0,733      1,000    0,846      0,847    0,991     0,766     comitative
+                 0,000    0,027    0,000      0,000    0,000      -0,027   0,802     0,106     locative:static:relative
+                 0,286    0,049    0,182      0,286    0,222      0,191    0,874     0,234     locative:static:adessive
+                 0,741    0,123    0,500      0,741    0,597      0,529    0,900     0,600     locative:directional:allative
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,931     0,071     superlative:attributive
+                 0,200    0,029    0,375      0,200    0,261      0,230    0,812     0,305     temporal
+                 0,500    0,078    0,458      0,500    0,478      0,407    0,824     0,395     locative:static:inessive
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,218     0,007     locative:directional:local:circular
+                 0,500    0,011    0,667      0,500    0,571      0,561    0,927     0,581     referential
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,395     0,019     instrumental
+                 0,214    0,023    0,429      0,214    0,286      0,265    0,800     0,410     referential:target
+                 0,000    0,005    0,000      0,000    0,000      -0,008   0,955     0,225     process:onset
+                 0,000    0,016    0,000      0,000    0,000      -0,013   0,310     0,011     quantifying:relational
+                 0,333    0,005    0,500      0,333    0,400      0,401    0,951     0,272     locative:directional:passage
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,569     0,012     volitive
+Weighted Avg.    0,534    0,040    0,508      0,534    0,509      0,481    0,858     0,515     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x   <-- classified as
+  6  0  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0  1  0  0  0  0  1  0 |  a = topical
+  0  1  0  0  0  0  0  0  0  1  0  2  1  0  0  3  0  0  0  0  0  1  0  0 |  b = modal
+  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  c = attributive
+  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = excessive
+  0  0  0  1  3  0  0  0  0  1  0  0  0  0  1  0  0  1  0  0  0  0  0  0 |  e = causal
+  0  0  0  0  0  1  0  0  0  0  0  1  0  0  0  0  0  0  0  0  1  0  0  0 |  f = process
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 |  g = locative:directional:local
+  0  0  0  0  0  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  h = prefix
+  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = consecutive
+  0  0  0  0  0  0  0  0  0 11  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = comitative
+  2  0  0  0  0  0  0  0  0  0  0  0  1  0  0  1  0  0  0  0  0  1  0  0 |  k = locative:static:relative
+  0  0  0  0  0  2  0  0  0  0  0  2  0  0  0  2  0  0  0  1  0  0  0  0 |  l = locative:static:adessive
+  0  1  0  0  0  0  0  0  0  0  0  0 20  0  2  3  0  0  0  1  0  0  0  0 |  m = locative:directional:allative
+  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  n = superlative:attributive
+  0  1  0  0  1  2  0  0  0  0  0  3  2  0  3  2  0  0  0  0  0  1  0  0 |  o = temporal
+  0  2  0  0  1  0  0  0  0  0  1  1  4  0  1 11  0  0  0  1  0  0  0  0 |  p = locative:static:inessive
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 |  q = locative:directional:local:circular
+  3  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  4  0  0  0  0  0  0 |  r = referential
+  1  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  0  0  0  0  0  0 |  s = instrumental
+  0  0  0  0  0  0  0  0  0  0  0  1  9  0  0  1  0  0  0  3  0  0  0  0 |  t = referential:target
+  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  u = process:onset
+  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0 |  v = quantifying:relational
+  1  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  1  0 |  w = locative:directional:passage
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0 |  x = volitive
+

@@ -1,0 +1,367 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     Adpositions
+Instances:    189
+Attributes:   11
+              deLemma
+              dePOS
+              deArgumentPOS
+              deArgumentCase
+              deDependencyLemma
+              deDependencyPOS
+              plLemma
+              plPOS
+              plCase
+              plArgumentPOS
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:19/19 (189)
+
+Number of Leaves  :     1
+
+Size of the Tree :  1
+LM_1:
+Class 0 :
+-2.08 + 
+[deLemma=nach] * 1.27 +
+[deLemma=über] * 6.31 +
+[deDependencyLemma=weiß] * 2.43 +
+[deDependencyLemma=denken] * 1.21 +
+[deDependencyLemma=schreiben] * -1.27 +
+[deDependencyLemma=fragen] * 1.04 +
+[deDependencyLemma=none] * -1.23 +
+[deDependencyLemma=Meinung] * 4.47 +
+[deDependencyPOS=Verb] * -1.47 +
+[plLemma=o] * 3.28 +
+[plCase=Instrumental] * -1.22 +
+[plArgumentPOS=Noun] * -0.99 +
+[plArgumentPOS=Pronoun] * 1.39
+
+Class 1 :
+-1.4 + 
+[deLemma=in] * 1.21 +
+[deLemma=nach] * -1.26 +
+[deArgumentPOS=Noun] * 1.71 +
+[deDependencyLemma=lassen] * 4.7  +
+[deDependencyLemma=alle] * 1.69 +
+[deDependencyLemma=nehmen] * 4.36 +
+[deDependencyLemma=einteilen] * 5.05 +
+[deDependencyLemma=helfen] * 7.41 +
+[deDependencyLemma=<card>] * 3.05 +
+[deDependencyLemma=none] * 0.83 +
+[deDependencyPOS=Verb] * -1.44 +
+[plLemma=w] * -0.82 +
+[plPOS=Verb] * 2.06 +
+[plArgumentPOS=Verb] * 1.44
+
+Class 2 :
+-18.28 + 
+[deDependencyLemma=stolz] * 39.3
+
+Class 3 :
+-18.44 + 
+[dePOS=Particle] * 13.18 +
+[deArgumentPOS=Adjective] * 16.29 +
+[deDependencyLemma=sein] * 6.81
+
+Class 4 :
+-3.78 + 
+[deLemma=in] * 0.64 +
+[deLemma=nach] * -1.23 +
+[dePOS=Conjunction] * 8.08 +
+[deArgumentPOS=Pronoun] * 0.95 +
+[deDependencyLemma=passieren] * 8.65 +
+[deDependencyLemma=none] * 2.01 +
+[deDependencyPOS=Verb] * -0.87 +
+[plLemma=w] * 0.72 +
+[plLemma=o] * -1.21 +
+[plCase=Accusative] * -1.26 +
+[plArgumentPOS=Verb] * 1.05 +
+[plArgumentPOS=Adjective] * 2.63
+
+Class 5 :
+-8.28 + 
+[deLemma=in] * -2.39 +
+[deLemma=mit] * 0.68 +
+[deDependencyLemma=sein] * 4.18 +
+[deDependencyLemma=beginnen] * 5.75 +
+[plLemma=none] * 6.37 +
+[plArgumentPOS=Verb] * 4.39 +
+[plArgumentPOS=none] * -2.5
+
+Class 6 :
+-18.66 + 
+[deLemma=in] * 4.83 +
+[deArgumentPOS=Noun] * 4.61 +
+[deArgumentCase=Dative] * 3.02 +
+[deDependencyLemma=sein] * 6.04 +
+[plLemma=w] * 1.27 +
+[plCase=Locative] * 1.17 +
+[plArgumentPOS=Noun] * 1.01
+
+Class 7 :
+7.76 + 
+[deLemma=zu] * 1.51 +
+[dePOS=Verb] * 2.78 +
+[dePOS=Adposition] * -15.6 +
+[dePOS=Particle] * 1.13 +
+[dePOS=Conjunction] * -9.05
+
+Class 8 :
+-18.28 + 
+[deDependencyLemma=geschehen] * 40.22
+
+Class 9 :
+-9.75 + 
+[deLemma=mit] * 10.21 +
+[deArgumentPOS=Pronoun] * 1.24 +
+[deDependencyLemma=passieren] * -5.4 +
+[deDependencyLemma=amüsiert] * 3.22 +
+[deDependencyLemma=sprechen] * 2.7  +
+[deDependencyPOS=Verb] * 1.23 +
+[plLemma=z] * 3.26 +
+[plPOS=Adposition] * 2.01 +
+[plArgumentPOS=Noun] * -1.12
+
+Class 10 :
+-4.43 + 
+[deLemma=in] * 1.1  +
+[deLemma=über] * 4.1  +
+[deLemma=auf] * -2.87 +
+[deLemma=an] * -3.04 +
+[deArgumentPOS=Article] * 0.81 +
+[deDependencyLemma=sein] * 3.48 +
+[deDependencyLemma=stolpern] * 5.01 +
+[plLemma=przekraczać] * 2.98 +
+[plLemma=nad] * 3.16 +
+[plLemma=none] * -1.27 +
+[plArgumentPOS=Adjective] * 3.14
+
+Class 11 :
+-5.6 + 
+[deLemma=an] * 4.27 +
+[deArgumentCase=Dative] * 1.13 +
+[deDependencyLemma=schicken] * 4.4  +
+[deDependencyLemma=Stechkahn] * 4.42 +
+[deDependencyLemma=sein] * 3.08 +
+[deDependencyLemma=nahe] * 3.05 +
+[deDependencyPOS=Verb] * -1.22 +
+[plLemma=na] * 2.55 +
+[plLemma=w] * -2.66 +
+[plCase=Accusative] * -1.68 +
+[plCase=Instrumental] * 2.24 +
+[plArgumentPOS=Noun] * 2.75
+
+Class 12 :
+-0.84 + 
+[deLemma=zu] * 3.3  +
+[deLemma=nach] * 1.53 +
+[deArgumentCase=Accusative] * 1.87 +
+[deDependencyLemma=Schritt] * 1.55 +
+[deDependencyLemma=verlieben] * 1.8  +
+[deDependencyLemma=entführe] * 2.16 +
+[deDependencyLemma=schießen] * 2.24 +
+[deDependencyLemma=gehen] * 1.49 +
+[deDependencyLemma=bringen] * 1.79 +
+[deDependencyLemma=direkt] * 2.98 +
+[deDependencyLemma=Ruder] * 4.41 +
+[deDependencyLemma=sehen] * -2.91 +
+[plLemma=do] * 2.84 +
+[plLemma=wrócić] * 2.4  +
+[plCase=Locative] * -1.25
+
+Class 13 :
+-18.28 + 
+[deDependencyLemma=aber] * 39.53
+
+Class 14 :
+-0.8 + 
+[deLemma=auf] * -1.09 +
+[deArgumentPOS=Noun] * -0.59 +
+[deArgumentCase=Accusative] * -1.48 +
+[deDependencyLemma=schiefgehen] * 2.99 +
+[deDependencyLemma=evakuieren] * 4.73 +
+[deDependencyLemma=beginnen] * 1.34 +
+[deDependencyLemma=abschieben] * 3.05 +
+[deDependencyLemma=fühlte] * 4.3  +
+[deDependencyLemma=werden] * 4.2  +
+[deDependencyLemma=none] * 1.8  +
+[plLemma=po] * 4.14 +
+[plLemma=za] * 1.96 +
+[plCase=Accusative] * 0.79 +
+[plArgumentPOS=Adjective] * 2.23
+
+Class 15 :
+-1.97 + 
+[deLemma=in] * 1.89 +
+[deLemma=nach] * -1.43 +
+[deLemma=auf] * 1.66 +
+[deArgumentPOS=Pronoun] * -0.85 +
+[deDependencyLemma=als] * 2.39 +
+[deDependencyLemma=sein] * 1.09 +
+[deDependencyLemma=erzählt] * 2.96 +
+[deDependencyLemma=helfen] * -1.39 +
+[deDependencyLemma=<card>] * -2.53 +
+[deDependencyLemma=Stützpunkt] * 4.51 +
+[deDependencyLemma=ruhen] * 2.96 +
+[plLemma=w] * 1.5  +
+[plCase=Accusative] * -2.35 +
+[plCase=Locative] * 2.69 +
+[plArgumentPOS=Adjective] * -2.3
+
+Class 16 :
+-18.28 + 
+[deDependencyLemma=Drehung] * 39.86
+
+Class 17 :
+-4.77 + 
+[deLemma=über] * 1.14 +
+[deLemma=um] * 1.94 +
+[deArgumentPOS=Pronoun] * 2.18 +
+[deDependencyLemma=lachen] * 7.71 +
+[deDependencyLemma=schreiben] * 9.46 +
+[deDependencyLemma=none] * -1.3 +
+[plLemma=o] * 5.52 +
+[plCase=Accusative] * 0.92 +
+[plCase=Locative] * -1.45
+
+Class 18 :
+-5.41 + 
+[deArgumentCase=Genitive] * 7.42 +
+[deDependencyLemma=erwecken] * 6.26 +
+[deDependencyLemma=fühlt] * 10.94 +
+[plLemma=w] * -1.29 +
+[plPOS=Adposition] * -1.53 +
+[plCase=Instrumental] * 2.68 +
+[plCase=none] * -1.3 +
+[plArgumentPOS=Noun] * 2.12
+
+Class 19 :
+-1.23 + 
+[deLemma=auf] * 1.38 +
+[deDependencyLemma=wild] * 4.24 +
+[deDependencyLemma=warten] * 1.2  +
+[deDependencyLemma=wärt] * 4.4  +
+[deDependencyLemma=bläst] * 4.4  +
+[deDependencyLemma=setzen] * 4.38 +
+[deDependencyLemma=Hinweis] * 2.97 +
+[deDependencyLemma=sehen] * 4.1  +
+[deDependencyLemma=glauben] * 2.94 +
+[plLemma=na] * 1.81 +
+[plPOS=Pronoun] * 3.95 +
+[plCase=Locative] * -1.18 +
+[plArgumentPOS=Pronoun] * 1.34
+
+Class 20 :
+-11.4 + 
+[deLemma=mit] * 6.51 +
+[deArgumentPOS=Noun] * -3.53 +
+[deDependencyLemma=beginnen] * 9.24 +
+[plLemma=od] * 7.99
+
+Class 21 :
+-16.95 + 
+[plLemma=około] * 5.25 +
+[plLemma=ponad] * 6.84 +
+[plPOS=Clitic] * 20.87 +
+[plArgumentPOS=Noun] * 4.57
+
+Class 22 :
+-7.62 + 
+[deLemma=über] * 8.1  +
+[deArgumentPOS=Pronoun] * -2.7 +
+[deArgumentPOS=Article] * 1.4  +
+[deDependencyLemma=flüchten] * 7.18 +
+[deDependencyLemma=gehen] * 2.5  +
+[deDependencyLemma=spritzen] * 4.79 +
+[plLemma=na] * 2.45 +
+[plLemma=none] * -2.27
+
+Class 23 :
+-18.49 + 
+[deLemma=auf] * 5.1  +
+[deArgumentPOS=Noun] * 3.77 +
+[deArgumentCase=Accusative] * 3.9  +
+[deDependencyLemma=none] * 9.45 +
+[plLemma=do] * 6.17
+
+
+Time taken to build model: 14.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         118               62.4339 %
+Incorrectly Classified Instances        71               37.5661 %
+Kappa statistic                          0.5815
+Mean absolute error                      0.0356
+Root mean squared error                  0.1594
+Relative absolute error                 46.6051 %
+Root relative squared error             81.8059 %
+Coverage of cases (0.95 level)          75.6614 %
+Mean rel. region size (0.95 level)       9.7884 %
+Total Number of Instances              189     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,800    0,045    0,500      0,800    0,615      0,607    0,856     0,623     topical
+                 0,111    0,017    0,250      0,111    0,154      0,140    0,766     0,170     modal
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,697     0,017     attributive
+                 0,500    0,005    0,500      0,500    0,500      0,495    0,989     0,450     excessive
+                 0,571    0,005    0,800      0,571    0,667      0,666    0,656     0,589     causal
+                 0,667    0,005    0,667      0,667    0,667      0,661    0,672     0,394     process
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,146     0,006     locative:directional:local
+                 1,000    0,006    0,971      1,000    0,985      0,982    0,997     0,984     prefix
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,691     0,017     consecutive
+                 0,909    0,028    0,667      0,909    0,769      0,763    0,990     0,840     comitative
+                 0,200    0,016    0,250      0,200    0,222      0,205    0,676     0,169     locative:static:relative
+                 0,571    0,016    0,571      0,571    0,571      0,555    0,948     0,410     locative:static:adessive
+                 0,852    0,111    0,561      0,852    0,676      0,629    0,932     0,780     locative:directional:allative
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,979     0,200     superlative:attributive
+                 0,400    0,034    0,500      0,400    0,444      0,405    0,842     0,404     temporal
+                 0,727    0,060    0,615      0,727    0,667      0,621    0,925     0,595     locative:static:inessive
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,574     0,012     locative:directional:local:circular
+                 0,625    0,017    0,625      0,625    0,625      0,608    0,933     0,603     referential
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,570     0,029     instrumental
+                 0,286    0,029    0,444      0,286    0,348      0,316    0,869     0,445     referential:target
+                 0,000    0,011    0,000      0,000    0,000      -0,011   0,505     0,130     process:onset
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,463     0,015     quantifying:relational
+                 0,000    0,005    0,000      0,000    0,000      -0,009   0,821     0,120     locative:directional:passage
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,309     0,008     volitive
+Weighted Avg.    0,624    0,036    0,571      0,624    0,586      0,564    0,874     0,591     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x   <-- classified as
+  8  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  1  0  0  0  0  0  0 |  a = topical
+  0  1  0  0  0  0  0  0  0  1  0  1  1  0  2  3  0  0  0  0  0  0  0  0 |  b = modal
+  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  c = attributive
+  0  0  0  1  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = excessive
+  0  0  0  1  4  0  0  0  0  1  0  0  0  0  1  0  0  0  0  0  0  0  0  0 |  e = causal
+  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0 |  f = process
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 |  g = locative:directional:local
+  0  0  0  0  0  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  h = prefix
+  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = consecutive
+  0  0  0  0  0  0  0  0  0 10  0  0  0  0  0  0  0  0  0  1  0  0  0  0 |  j = comitative
+  1  0  0  0  0  0  0  0  0  0  1  0  1  0  0  1  0  0  0  0  0  0  1  0 |  k = locative:static:relative
+  0  1  0  0  0  0  0  0  0  0  0  4  0  0  0  2  0  0  0  0  0  0  0  0 |  l = locative:static:adessive
+  0  0  0  0  0  0  0  0  0  0  0  0 23  0  1  1  0  0  0  2  0  0  0  0 |  m = locative:directional:allative
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0 |  n = superlative:attributive
+  0  1  0  0  1  0  0  0  0  0  1  0  2  0  6  2  0  1  0  0  1  0  0  0 |  o = temporal
+  0  0  0  0  0  0  0  0  0  0  1  1  2  0  1 16  0  0  0  1  0  0  0  0 |  p = locative:static:inessive
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0 |  q = locative:directional:local:circular
+  2  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  5  0  0  0  0  0  0 |  r = referential
+  1  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  0  0  0  0  0  0 |  s = instrumental
+  0  1  0  0  0  0  0  0  0  0  0  0  8  0  1  0  0  0  0  4  0  0  0  0 |  t = referential:target
+  0  0  0  0  0  1  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  u = process:onset
+  1  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  v = quantifying:relational
+  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  w = locative:directional:passage
+  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  x = volitive
+

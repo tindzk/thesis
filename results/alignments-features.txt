@@ -1,0 +1,45 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     Alignment
+Instances:    33064
+Attributes:   12
+              offsetRatio
+              lengthRatio
+              posSimilarity
+              orthSimilarity
+              lemmaSimilarity
+              dictCorrespondences
+              sourceChildren
+              targetChildren
+              childrenRatio
+              depthDiff
+              depthRatio
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+  Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 12 class):
+  Correlation Ranking Filter
+Ranked attributes:
+ 0.25462   9 childrenRatio
+ 0.20784   6 dictCorrespondences
+ 0.19325  10 depthDiff
+ 0.18537   3 posSimilarity
+ 0.15533   7 sourceChildren
+ 0.14271   8 targetChildren
+ 0.04685   1 offsetRatio
+ 0.02428   2 lengthRatio
+ 0.00678  11 depthRatio
+ 0.00437   4 orthSimilarity
+ 0.00242   5 lemmaSimilarity
+
+Selected attributes: 9,6,10,3,7,8,1,2,11,4,5 : 11
+

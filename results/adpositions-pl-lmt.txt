@@ -1,0 +1,266 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     Adpositions
+Instances:    189
+Attributes:   5
+              plLemma
+              plPOS
+              plCase
+              plArgumentPOS
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:6/6 (189)
+
+Number of Leaves  :     1
+
+Size of the Tree :  1
+LM_1:
+Class 0 :
+-0.44 + 
+[plLemma=według] * 2.84 +
+[plLemma=none] * 0.9  +
+[plLemma=o] * 3.75 +
+[plCase=Accusative] * -1.24 +
+[plArgumentPOS=Pronoun] * 1.09
+
+Class 1 :
+0.01 + 
+[plLemma=cytować] * 5.78 +
+[plLemma=przeżyć] * 5.57 +
+[plLemma=przy] * 2.13 +
+[plArgumentPOS=Number] * 2.47
+
+Class 2 :
+-5.88 + 
+[plLemma=z] * 3.82 +
+[plCase=Genitive] * 3.06 +
+[plArgumentPOS=Pronoun] * 1.89
+
+Class 3 :
+-4.12 + 
+[plLemma=spóźnić] * 6.87 +
+[plLemma=za] * 3.28 +
+[plPOS=Clitic] * 3.37 +
+[plCase=none] * 2.13 +
+[plArgumentPOS=Adjective] * 1.85
+
+Class 4 :
+-0.88 + 
+[plLemma=by] * 4.49 +
+[plLemma=dokończyć] * 5.72 +
+[plLemma=prawda] * 2.55 +
+[plLemma=z] * 2.07
+
+Class 5 :
+-3.54 + 
+[plLemma=none] * 4.09 +
+[plArgumentPOS=Verb] * 2.35 +
+[plArgumentPOS=none] * -2.12
+
+Class 6 :
+-5.87 + 
+[plLemma=w] * 2.12 +
+[plCase=Locative] * 3.07 +
+[plArgumentPOS=Noun] * 0.92
+
+Class 7 :
+1.41 + 
+[plLemma=aby] * 3.05 +
+[plPOS=Adposition] * -3.28 +
+[plPOS=Noun] * 2.06 +
+[plPOS=Verb] * 3.15 +
+[plArgumentPOS=Noun] * -1.09
+
+Class 8 :
+-5.87 + 
+[plLemma=z] * 3.96 +
+[plCase=Instrumental] * 2.45 +
+[plArgumentPOS=Noun] * 1.56
+
+Class 9 :
+-1.4 + 
+[plLemma=do] * 1.91 +
+[plLemma=none] * 0.9  +
+[plLemma=z] * 3.25 +
+[plCase=Instrumental] * 2.44 +
+[plArgumentPOS=Noun] * -1.1
+
+Class 10 :
+-1.64 + 
+[plLemma=przekraczać] * 5.12 +
+[plLemma=na] * 1.58 +
+[plLemma=nad] * 4.83 +
+[plArgumentPOS=Adjective] * 2.14
+
+Class 11 :
+-1.14 + 
+[plLemma=przy] * 2.03 +
+[plLemma=przed] * 3.02 +
+[plLemma=na] * 1.98 +
+[plLemma=nad] * 2.28 +
+[plCase=Accusative] * -1.49 +
+[plArgumentPOS=Noun] * 1.32
+
+Class 12 :
+1.04 + 
+[plLemma=do] * 2.13 +
+[plLemma=wrócić] * 5.12 +
+[plCase=Locative] * -2.57 +
+[plArgumentPOS=Adjective] * 1.02
+
+Class 13 :
+-5.84 + 
+[plLemma=none] * 2.76 +
+[plArgumentPOS=none] * 2.85
+
+Class 14 :
+0.25 + 
+[plLemma=jaki] * 2.85 +
+[plLemma=rano] * 2.98 +
+[plLemma=po] * 3.46 +
+[plLemma=za] * 2.11 +
+[plArgumentPOS=Adjective] * 1.49
+
+Class 15 :
+-1.06 + 
+[plLemma=w] * 1.5  +
+[plLemma=none] * 1.66 +
+[plCase=Accusative] * -1.12 +
+[plCase=Locative] * 2.69 +
+[plArgumentPOS=Number] * 2.72 +
+[plArgumentPOS=Adjective] * -1.22
+
+Class 16 :
+-6.07 + 
+[plLemma=o] * 5.67 +
+[plArgumentPOS=Number] * 6.42
+
+Class 17 :
+-1.18 + 
+[plLemma=o] * 4.16 +
+[plLemma=z] * 1.54 +
+[plCase=Locative] * -1.02 +
+[plArgumentPOS=Pronoun] * 1.45 +
+[plArgumentPOS=Adjective] * 0.92
+
+Class 18 :
+-2.9 + 
+[plLemma=nadajnik] * 5.47 +
+[plLemma=swój] * 3.57 +
+[plLemma=przez] * 6.66 +
+[plCase=Instrumental] * 2.64
+
+Class 19 :
+0.31 + 
+[plLemma=na] * 1.72 +
+[plLemma=za] * 1.74 +
+[plLemma=z] * -1.13 +
+[plPOS=Pronoun] * 2.58 +
+[plCase=Locative] * -1.22 +
+[plArgumentPOS=Pronoun] * 1.48
+
+Class 20 :
+-4.94 + 
+[plLemma=od] * 6.13 +
+[plLemma=none] * 2.72 +
+[plArgumentPOS=Noun] * 2.98
+
+Class 21 :
+-5.54 + 
+[plLemma=około] * 1.69 +
+[plLemma=ponad] * 1.81 +
+[plPOS=Clitic] * 7.51 +
+[plArgumentPOS=Noun] * 1.75
+
+Class 22 :
+-2.38 + 
+[plLemma=po] * 2.95 +
+[plLemma=na] * 2.03 +
+[plLemma=wyjść] * 8.42 +
+[plArgumentPOS=Noun] * 0.92
+
+Class 23 :
+-5.85 + 
+[plLemma=do] * 4.67 +
+[plArgumentPOS=Noun] * 2.3 
+
+
+Time taken to build model: 1.33 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          89               47.0899 %
+Incorrectly Classified Instances       100               52.9101 %
+Kappa statistic                          0.4062
+Mean absolute error                      0.0536
+Root mean squared error                  0.1778
+Relative absolute error                 70.2445 %
+Root relative squared error             91.2365 %
+Coverage of cases (0.95 level)          76.7196 %
+Mean rel. region size (0.95 level)      28.7919 %
+Total Number of Instances              189     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,300    0,028    0,375      0,300    0,333      0,302    0,754     0,294     topical
+                 0,000    0,017    0,000      0,000    0,000      -0,028   0,398     0,041     modal
+                 0,000    0,005    0,000      0,000    0,000      -0,005   0,761     0,022     attributive
+                 0,000    0,011    0,000      0,000    0,000      -0,011   0,003     0,008     excessive
+                 0,286    0,016    0,400      0,286    0,333      0,317    0,459     0,174     causal
+                 0,667    0,027    0,286      0,667    0,400      0,423    0,942     0,309     process
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,577     0,012     locative:directional:local
+                 0,818    0,173    0,500      0,818    0,621      0,542    0,903     0,575     prefix
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,223     0,007     consecutive
+                 0,818    0,028    0,643      0,818    0,720      0,706    0,855     0,596     comitative
+                 0,200    0,011    0,333      0,200    0,250      0,243    0,684     0,203     locative:static:relative
+                 0,143    0,016    0,250      0,143    0,182      0,166    0,741     0,147     locative:static:adessive
+                 0,593    0,105    0,485      0,593    0,533      0,450    0,820     0,520     locative:directional:allative
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,678     0,016     superlative:attributive
+                 0,200    0,034    0,333      0,200    0,250      0,210    0,778     0,257     temporal
+                 0,727    0,036    0,727      0,727    0,727      0,691    0,889     0,644     locative:static:inessive
+                 0,000    0,005    0,000      0,000    0,000      -0,005   0,064     0,006     locative:directional:local:circular
+                 0,375    0,011    0,600      0,375    0,462      0,457    0,673     0,384     referential
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,559     0,023     instrumental
+                 0,429    0,040    0,462      0,429    0,444      0,402    0,841     0,513     referential:target
+                 0,000    0,011    0,000      0,000    0,000      -0,011   0,499     0,039     process:onset
+                 0,000    0,005    0,000      0,000    0,000      -0,008   0,468     0,014     quantifying:relational
+                 0,000    0,011    0,000      0,000    0,000      -0,013   0,329     0,015     locative:directional:passage
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,370     0,008     volitive
+Weighted Avg.    0,471    0,062    0,422      0,471    0,433      0,391    0,755     0,400     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x   <-- classified as
+  3  0  1  0  0  0  0  2  0  0  0  0  0  0  1  0  0  2  0  0  1  0  0  0 |  a = topical
+  0  0  0  0  0  0  0  3  0  0  0  1  1  0  0  2  1  0  0  1  0  0  0  0 |  b = modal
+  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  c = attributive
+  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0 |  d = excessive
+  0  0  0  0  2  0  0  3  0  1  0  0  0  0  1  0  0  0  0  0  0  0  0  0 |  e = causal
+  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0 |  f = process
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 |  g = locative:directional:local
+  0  0  0  0  2  2  0 27  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0 |  h = prefix
+  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = consecutive
+  0  0  0  0  0  0  0  1  0  9  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  j = comitative
+  0  0  0  0  0  0  0  1  0  0  1  1  0  0  1  0  0  0  0  1  0  0  0  0 |  k = locative:static:relative
+  0  1  0  0  0  0  0  0  0  0  1  1  2  0  0  1  0  0  0  1  0  0  0  0 |  l = locative:static:adessive
+  0  0  0  0  0  1  0  6  0  1  1  0 16  0  0  0  0  0  0  2  0  0  0  0 |  m = locative:directional:allative
+  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  n = superlative:attributive
+  1  0  0  0  0  0  0  2  0  0  0  0  5  0  3  2  0  0  0  0  0  0  2  0 |  o = temporal
+  0  1  0  0  0  0  0  3  0  0  0  1  0  0  1 16  0  0  0  0  0  0  0  0 |  p = locative:static:inessive
+  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  q = locative:directional:local:circular
+  4  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0 |  r = referential
+  0  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  0  0  0  1  0  0  0  0 |  s = instrumental
+  0  0  0  0  0  1  0  2  0  0  0  0  4  0  1  0  0  0  0  6  0  0  0  0 |  t = referential:target
+  0  0  0  0  0  1  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  u = process:onset
+  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  v = quantifying:relational
+  0  0  0  0  0  0  0  1  0  0  0  0  0  0  1  0  0  0  0  1  0  0  0  0 |  w = locative:directional:passage
+  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  x = volitive
+

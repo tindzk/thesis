@@ -1,0 +1,31 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     Adpositions
+Instances:    189
+Attributes:   5
+              plLemma
+              plPOS
+              plCase
+              plArgumentPOS
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+    Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 5 class):
+    Correlation Ranking Filter
+Ranked attributes:
+ 0.157   3 plCase
+ 0.149   2 plPOS
+ 0.1184  4 plArgumentPOS
+ 0.0865  1 plLemma
+
+Selected attributes: 3,2,4,1 : 4
+
