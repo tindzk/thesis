@@ -431,7 +431,7 @@ Das Lemma-Korpus könnte in Anlehnung an PoliMorf erweitert werden, sodass die e
 ### Einheiten-Hierarchie
 Derzeit wird die Einheiten-Hierarchie als gegeben vorausgesetzt. Damit auch arbiträre Sätze verarbeiten werden können, sollte ein zu  @Chiang:2007:HPT:1268656.1268659 verwandtes Verfahren implementiert werden. Eine andere Option wäre die Reduktion auf das Segmentierungsproblem^[*engl.* disjoint-set data structure] mit selbst-definierten *constraints*, welche die Nichtüberlappbarkeit von Einheiten und die Eltern-Kind-Beziehung forcieren.
 
-### Lemmas als Einheiten
+### Lemmata als Einheiten
 @DIMA14.329 zeigt, dass Komposita im Deutschen interne Beziehungen aufweisen, welche denen von Präpositionen entsprechen. Wird ein Lemma, das die Segmentierungen widerspiegelt, durch eine Einheit repräsentiert, so könnten die Segmente entsprechend semantisch annotiert werden. Darüber hinaus würde dies die Qualität der Alignments steigern.
 
 (a) Wer pflanzte dieses Ding dem Abgeordneten Albert ins **Hotelzimmer**?

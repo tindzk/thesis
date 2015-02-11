@@ -9,7 +9,7 @@ Die Adposition *in* kann eine Bewegungsrichtung („in die Schule gehen“) oder
 ## Linguistik
 Zu der Gruppe der Adpositionen gehören Präpositionen, Postpositionen und Zirkumpositionen. Adpositionen und grammatikalische Fälle haben denselben Zweck. Arnold M. Zwicky beschreibt das „Prinzip der funktionalen Äquivalenz“ in [@brentari1992joy S. 370] wie folgt: „Everything you can do with adpositions you can do with case inflections, and vice versa.“
 
-Zwischen Adpositionen und Fallflektierungen werden Überlappungen gefunden. Adpositionen werden als getrennte Wörter verstanden, Fallflektierungen hingegen der Morphologie zugeordnet. Linguisten vermuten, dass es sich bei den Affixen ursprünglich um kurze Wörter (vermutlich Klitika) gehandelt hat [@haspelmath09, S. 2].
+Zwischen Adpositionen und Fallflexionen werden Überlappungen gefunden. Adpositionen werden als getrennte Wörter verstanden, Fallflexionen hingegen der Morphologie zugeordnet. Linguisten vermuten, dass es sich bei den Affixen ursprünglich um kurze Wörter (vermutlich Klitika) gehandelt hat [@haspelmath09, S. 2].
 
 In indoeuropäischen Sprachen wird eine generelle Tendenz beobachtet, dass Fälle in ihrer Entwicklung aufgelöst und durch Adpositionen ersetzt wurden [@hewson2006case, S. 21]. Eine weitere Folge war die Entwicklung eines Artikelsystems, wie bei Bulgarisch und Mazedonisch. Ungarisch hat neun Fälle, um genaue räumliche Relationen auszudrücken [@haspelmath09, S. 9f]. Dieses Konzept findet sich auch in anderen finno-ugrischen Sprachen.
 
@@ -88,7 +88,7 @@ Im Korpus sind Adpositionen unidirektional annotiert. Folglich wird nur untersuc
 
 Damit Informationen aus dem Korpus zuverlässig extrahiert werden können, muss die Annotierung konsistent durchgeführt werden. Folgende Einschränkungen wurden getroffen:
 
-Präpositionsphrasen müssen einer Einheit entsprechen. Diese Einheit wird weiter unterteilt. Eine Untereinheit ist die Präposition selber. Ist diese ein Argument von einem Verb, muss es auf dieses verweisen. Analog dazu müssen die internen Abhängigkeiten aller anderen Kinder der PP-Einheit gesetzt sein. Entscheidend ist auch, dass die korrespondierende Einheit in der anderen Sprachversion für alle PP-Kinder gesetzt wurden. Abschließend wird dem ersten Kind der PP-Einheit, welches immer die Präposition darstellt (zusammengesetzte Präpositionen werden nicht betrachtet), eine semantische Klasse zugeordnet.
+Präpositionalphrasen müssen einer Einheit entsprechen. Diese Einheit wird weiter unterteilt. Eine Untereinheit ist die Präposition selber. Ist diese ein Argument von einem Verb, muss es auf dieses verweisen. Analog dazu müssen die internen Abhängigkeiten aller anderen Kinder der PP-Einheit gesetzt sein. Entscheidend ist auch, dass die korrespondierende Einheit in der anderen Sprachversion für alle PP-Kinder gesetzt wurden. Abschließend wird dem ersten Kind der PP-Einheit, welches immer die Präposition darstellt (zusammengesetzte Präpositionen werden nicht betrachtet), eine semantische Klasse zugeordnet.
 
 Eine Adposition muss nicht zwangsläufig auch auf eine Adposition abgebildet werden. Es gibt Fälle, in denen ein deutsches Verb eine PP erfordert, im Polnischen jedoch nicht. In solchen Fällen kann die Abbildung leer bleiben und lediglich das Argument abgebildet werden. Ebenso kann unter Umständen auch auf ein Verb abgebildet werden. Die folgende Tabelle gibt an, wie deutschen Adpositionen abgebildet wurden:
 
