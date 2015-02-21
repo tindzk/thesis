@@ -9,28 +9,49 @@ include-after:
     - \plain{Fragen?}
 ---
 
+## Ziele der Arbeit
+- **Ursprüngliche Idee:** Wissensbasis aus Wikipedia erzeugen
+    - Ontologische Darstellung des Wissens
+    - Komplementieren mit einer anderen Sprachversion
+- Teilprobleme bearbeitet
+    - Adpositionen
+    - Wissensdarstellungen
+
+\note{
+    - Verarbeitung paralleler Korpora schwierig
+}
+
 ## Thema
 ### Cross-language information retrieval (CLIR)
-* Abstraktionen zur Repräsentation von Wissen in parallelen Korpora
+1. Disambiguierung von Adpositionen
+    - Adpositionen kommen häufig in Sätzen vor
+    - mehrdeutig
+    - beeinflussen die Semantik
+2. Abstraktionen zur Repräsentation von Wissen in parallelen Korpora
     - Tokens
     - Einheiten
     - Abbildungen
     - Abhängigkeiten
     - Annotationen
-* Disambiguierung von Adpositionen
-    - Spezifizierung eines Annotationsschemas
-    - Trainieren von Modellen für Abbildungen und Annotationen
 
+\note{
+    - Disambiguierungsproblem \\
+    - für Adpositionen Wissen auf Wortebene repräsentieren \\
+    - Adpositionen nur aus Kontext erschließen \\
+    - grm. Informationen geben auch Auskunft \\
+    - Adpositionen in ihrer Bedeutung überladen
+}
 
 ## Adpositionen
-### Motivation
-* Forschungsstand
-    * bisher nur im Rahmen der kontrastiven Linguistik untersucht
-    * kein standardisiertes Annotationsschema
-* Adpositionen lassen sich nur aus Kontext erschließen $\rightarrow$ Disambiguierungsproblem
-* Fokus der Arbeit
-    * statistische Modelle statt präskriptiver Regeln
-    * Gesamtmodell bestehend aus zwei Sprachversionen
+### Forschungsstand
+* bisher nur im Rahmen der kontrastiven Linguistik untersucht
+* kein standardisiertes Annotationsschema
+
+### Fokus der Arbeit
+* statistische Modelle statt präskriptiver Regeln
+* Gesamtmodell bestehend aus zwei Sprachversionen
+* Spezifizierung eines Annotationsschemas
+* Trainieren von Modellen für Abbildungen und Annotationen
 
 # Wissensrepräsentationen
 ## Tokens
@@ -75,36 +96,23 @@ Attribute
 * $\bigcup_{e \in E} e = r$
 
 ## Abbildungen
-* *engl.:* alignment
-* Relationen zwischen Quell- und Zielsatz
-
-### Definitionen
-* $S$ bzw. $T$ Mengen aller Einheiten des Quell- und Zielsatzes
-* $(e_1, e_2)$: Abbildung mit $e_1 \in S$ und $e_2 \in T$
-
-## Abbildungen
 ### Beispiel
 [Peter] [hat] [Daniel] [das [Buch]] [verkauft] [.] \
 [Peter] [sold] [the [book]] [to [Daniel]] [.]
 
 $A = \{$ ([Peter], [Peter]), ([hat], [sold]), ([verkauft], [sold]), ([Daniel], [Daniel]), ([das], [the]), ([Buch], [book]) $\}$
 
-> **Abbildungen sind nicht bijektiv!** \
+### Definitionen
+* $(e_1, e_2)$: Abbildung mit $e_1 \in S$ Quellsatz und $e_2 \in T$ Zielsatz
+
+> **Abbildungen sind nicht bijektiv** \
 > $(x, [to]) \not\in A$ -- Im Deutschen durch ein Attribut im Token [Daniel] repräsentiert^[Kasus: Dativ].
 
-## Abhängigkeiten
-* angelehnt an Dependenzstrukturen (DS)^[**Begründer:** Lucien Tesnière (1893–1954)]
-    - Verb bestimmt Satzbau
-    - dargestellt als Baum
-* Verallgemeinerung von DS
-* Beziehungen
-    - zwischen Verben und Argumenten
-    - zwischen Nomen und ihren Modifikatoren
-    - usw.
-
 \note{
-    verwandt: "bubble structures" \\
-    \url{http://gerdes.fr/papiers/avant/bubbles.pdf}
+    engl.: alignment \\
+    Relationen zwischen Quell- und Zielsatz \\
+    $S$ bzw. $T$ Mengen aller Einheiten des Quell- und Zielsatzes \\
+    Beispiel erklären
 }
 
 ## Abhängigkeiten
@@ -117,6 +125,19 @@ $A = \{$ ([Peter], [Peter]), ([hat], [sold]), ([verkauft], [sold]), ([Daniel], [
    \depedge{3}{2}{}
    \depedge{4}{2}{}
 \end{dependency}
+
+\note{
+angelehnt an Dependenzstrukturen \\
+Begründer: Lucien Tesnière (1893–1954) \\
+Verb bestimmt Satzbau \\
+dargestellt als Baum \\
+Abh. formalisieren Beziehungen zwischen Tokens \\
+Verallgemeinerung von Dependenzstrukturen \\
+Beziehungen \\
+    zwischen Verben und Argumenten \\
+    zwischen Nomen und ihren Modifikatoren \\
+verwandt: "bubble structures"; http://gerdes.fr/papiers/avant/bubbles.pdf
+}
 
 # Annotierung
 ## Korpora
@@ -236,7 +257,7 @@ $A = \{$ ([Peter], [Peter]), ([hat], [sold]), ([verkauft], [sold]), ([Daniel], [
 - Features gewählt unter Annahme, dass Klasse abhängt von
     - grammatikalischen Eigenschaften
     - lexikalischem Kontext
-- drei Modelle trainiert: de, pl, de + pl
+- drei Modelle trainiert: `de`, `pl`, `de + pl`
 
 ## Modell für Annotationen
 ### Deutsch
@@ -273,15 +294,15 @@ plArgumentPOS
   ~ POS des Arguments
 
 ## Modell für Annotationen
-- J48
+- **J48**
     - zu starkes Pruning
     - geringe Tiefe
     - Klassifikation abhängig von wenigen Features
-- k-Means
+- **k-Means**
     - Clustering
     - Verfahren nicht für nominale Werte geeignet
     - erkennt für vorliegende Modelle nur zwei Cluster
-- LMT^[*engl.:* Logistic model tree]
+- **LMT**^[*engl.:* Logistic model tree]
     - Clustering-Ansatz: logistische Regression + Entscheidungsbäume
     - gute Feature-Selektion und -Gruppierung
 
@@ -297,8 +318,7 @@ plArgumentPOS
 | <span style="font-variant: small-caps">adpositions-de-pl</span> | 62,43% |
 
 ## Modell für Annotationen
-### LMT
-#### Beispiel
+### LMT: Beispiel
 ```
 Class 20 :
 -11.4 +
@@ -309,17 +329,37 @@ Class 20 :
 ```
 
 ## Herausforderungen
-### Adpositionen
-* keine Referenzkorpora vorhanden
-* Fehlen eines Standards für Annotationen
-* gewählter CLIR-Ansatz erfordert:
-    - korrekte Übersetzungen
-    - vorherige Erstellung von Entity-Abbildungen
-
-## Herausforderungen
 ### Tagging
 * wenige morphologische Tagger/Analyser für Deutsch erhältlich
 * RFTagger lässt sich nicht im Server-Modus verwenden
 * fehlerhafte Datensätze in RFTaggers Modell
     - falscher Zeichensatz
     - falscher Kasus
+
+### Adpositionen
+- gewählter CLIR-Ansatz erfordert:
+    - korrekte Übersetzungen
+    - vorherige Erstellung von Entity-Abbildungen
+
+## Ergebnisse
+* Referenzkorpus erzeugt
+* Schema für Annotationen ausgearbeitet
+* Entwicklung von Tools zur Verarbeitung
+* Adpositionen im Kontext der Mehrsprachigkeit untersucht
+
+## Ausblick
+### Prozess
+- zeitaufwändiger Annotationsprozess
+    - kann größtenteils mit Regeln automatisiert werden
+    - UI: on-the-fly Muster lernen und Annotationen vorschlagen
+    - Crowd-sourcing
+- Inkonsistenzen finden
+- Annotationsschema ausweiten
+- weitere Sprachen untersuchen
+- Google Translate für einsprachige Texte einsetzen
+
+## Ausblick
+### Anwendungen
+- Adpositionsmodell für Wissensextraktion verwenden
+    - Definitionen, Eigenschaften von Gegenständen
+    - Beziehungen
