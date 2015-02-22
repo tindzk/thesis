@@ -84,17 +84,6 @@ Attribute
 ### Beispiel
 [Peter] [sold] [the [book]] [to [Daniel]] [.]
 
-## Einheiten
-### Definitionen
-* $S$: Satz als Folge von Tokens
-* $|S|$: Anzahl der Tokens
-* $E$: Menge aller Einheiten in $S$
-* Einheit $e \in E$ Menge benachbarter Positionen
-* Wurzeleinheit $r = \{1, ..., |S|\} \in E$
-* Kindeinheit $child(e)$ echte Teilmenge von $e$
-    - $e \in E$ gdw. $e \neq \emptyset$ und $\forall e_1 \in e : \exists e_2 \in e : |e_1 - e_2| = 1$
-* $\bigcup_{e \in E} e = r$
-
 ## Abbildungen
 ### Beispiel
 [Peter] [hat] [Daniel] [das [Buch]] [verkauft] [.] \
@@ -202,16 +191,6 @@ directional:allative: Bewegung in Richtung des Objekts
 ## Annotierung
 ![Annotierung eines Satzes](../images/ui.png)
 
-## Korpusanalyse
-|  | **Anzahl**   |
-|-----------|--------|
-| Sätze  | 220 |
-| Einheiten | 2892 |
-| Tokens (Deutsch) | 2220 |
-| Tokens (Polnisch) | 1911 |
-| Abgebildete Einheiten | 1187 |
-| Abhängigkeiten | 196 |
-
 # Modelle
 ## Modell für Abbildungen
 - **Eingabe:** alle Abbildungen des Trainingskorpus
@@ -222,23 +201,6 @@ directional:allative: Bewegung in Richtung des Objekts
     - grammatikalischer Ähnlichkeit
     - lexikalischer Ähnlichkeit
 - Insgesamt 11 Features
-
-## Modell für Abbildungen
-| **Feature**         | **Anteil** |
-|---------------------|------------|
-| childrenRatio       | 0,25462    |
-| dictCorrespondences | 0,20784    |
-| depthDiff           | 0,19325    |
-| posSimilarity       | 0,18537    |
-| sourceChildren      | 0,15533    |
-| targetChildren      | 0,14271    |
-| offsetRatio         | 0,04685    |
-| lengthRatio         | 0,02428    |
-| depthRatio          | 0,00678    |
-| orthSimilarity      | 0,00437    |
-| lemmaSimilarity     | 0,00242    |
-
-:\  Korrelation zwischen den Features und der Klasse
 
 ## Modell für Abbildungen
 ### Algorithmus
@@ -255,22 +217,6 @@ directional:allative: Bewegung in Richtung des Objekts
 \note{
 	Sensitivität = Richtig-Positiv-Rate, engl. recall
 }
-
-## Modell für Abbildungen
-### Bayessches Netz
-:\  Performance des Gesamtmodells
-
-| **Klassifizierung** | **Instanzen** | **Anteil**  |
-|---------------------|---------------|-------------|
-| richtig             | 31650         | 95,7234%    |
-| falsch              | 1414          | 4,2766%     |
-
-:\  Performance der Klassen
-
-| **Klasse**  | **Genauigkeit** | **Sensitivität** |
-|---------|-------------|--------------|
-| negativ | 99,4%       | 96,1%        |
-| positiv | 45%       | 85,3%        |
 
 ## Modell für Annotationen
 - 24 nominale Klassen
@@ -384,3 +330,59 @@ Class 20 :
 - Adpositionsmodell für Wissensextraktion verwenden
     - Definitionen, Eigenschaften von Gegenständen
     - Beziehungen
+
+# Anhang
+## Korpusanalyse
+|  | **Anzahl**   |
+|-----------|--------|
+| Sätze  | 220 |
+| Einheiten | 2892 |
+| Tokens (Deutsch) | 2220 |
+| Tokens (Polnisch) | 1911 |
+| Abgebildete Einheiten | 1187 |
+| Abhängigkeiten | 196 |
+
+## Einheiten
+### Definitionen
+* $S$: Satz als Folge von Tokens
+* $|S|$: Anzahl der Tokens
+* $E$: Menge aller Einheiten in $S$
+* Einheit $e \in E$ Menge benachbarter Positionen
+* Wurzeleinheit $r = \{1, ..., |S|\} \in E$
+* Kindeinheit $child(e)$ echte Teilmenge von $e$
+    - $e \in E$ gdw. $e \neq \emptyset$ und $\forall e_1 \in e : \exists e_2 \in e : |e_1 - e_2| = 1$
+* $\bigcup_{e \in E} e = r$
+
+## Modell für Abbildungen
+| **Feature**         | **Anteil** |
+|---------------------|------------|
+| childrenRatio       | 0,25462    |
+| dictCorrespondences | 0,20784    |
+| depthDiff           | 0,19325    |
+| posSimilarity       | 0,18537    |
+| sourceChildren      | 0,15533    |
+| targetChildren      | 0,14271    |
+| offsetRatio         | 0,04685    |
+| lengthRatio         | 0,02428    |
+| depthRatio          | 0,00678    |
+| orthSimilarity      | 0,00437    |
+| lemmaSimilarity     | 0,00242    |
+
+:\  Korrelation zwischen den Features und der Klasse
+
+## Modell für Abbildungen
+### Bayessches Netz
+:\  Performance des Gesamtmodells
+
+| **Klassifizierung** | **Instanzen** | **Anteil**  |
+|---------------------|---------------|-------------|
+| richtig             | 31650         | 95,7234%    |
+| falsch              | 1414          | 4,2766%     |
+
+:\  Performance der Klassen
+
+| **Klasse**  | **Genauigkeit** | **Sensitivität** |
+|-------------|-----------------|------------------|
+| negativ     | 99,4%           | 96,1%            |
+| positiv     | 45%             | 85,3%            |
+
