@@ -44,7 +44,7 @@ include-after:
 
 ## Adpositionen
 ### Forschungsstand
-* bisher nur im Rahmen der kontrastiven Linguistik untersucht
+* im Rahmen der kontrastiven Linguistik untersucht
 * kein standardisiertes Annotationsschema
 
 ### Fokus der Arbeit
