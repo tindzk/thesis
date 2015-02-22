@@ -49,9 +49,9 @@ include-after:
 
 ### Fokus der Arbeit
 * statistische Modelle statt präskriptiver Regeln
+	* für Abbildungen und Annotationen
 * Gesamtmodell bestehend aus zwei Sprachversionen
 * Spezifizierung eines Annotationsschemas
-* Trainieren von Modellen für Abbildungen und Annotationen
 
 # Wissensrepräsentationen
 ## Tokens
@@ -242,15 +242,19 @@ directional:allative: Bewegung in Richtung des Objekts
 
 ## Modell für Abbildungen
 ### Algorithmus
-- Bayessches Netz
+- **Bayessches Netz**
     - korrekt klassifiziert: 95,72%
     - Sensitivität von 'positiv': 85,3%
-- Regellernen (JRip):
+- **Regellernen (JRip)**
     - korrekt klassifiziert: 98,21%
     - Sensitivität von 'positiv': 70,9%
-- Entscheidungsbaum (J48^[Wekas Implementierung von C4.5])
+- **Entscheidungsbaum** (J48^[Wekas Implementierung von C4.5])
     - korrekt klassifiziert: 98,3093%
     - Sensitivität von 'positiv': 69,8%
+
+\note{
+	Sensitivität = Richtig-Positiv-Rate, engl. recall
+}
 
 ## Modell für Abbildungen
 ### Bayessches Netz
@@ -271,10 +275,10 @@ directional:allative: Bewegung in Richtung des Objekts
 ## Modell für Annotationen
 - 24 nominale Klassen
 - Attribute ebenfalls nominal
-- Features gewählt unter Annahme, dass Klasse abhängt von
+- Features gewählt unter Annahme, dass Klasse abhängt von:
     - grammatikalischen Eigenschaften
     - lexikalischem Kontext
-- drei Modelle trainiert: `de`, `pl`, `de + pl`
+- drei Modelle trainiert: ``de``, ``pl``, ``de + pl``
 
 ## Modell für Annotationen
 ### Deutsch
@@ -356,12 +360,12 @@ Class 20 :
 ### Adpositionen
 - gewählter CLIR-Ansatz erfordert:
     - korrekte Übersetzungen
-    - vorherige Erstellung von Entity-Abbildungen
+    - vorherige Erstellung von Einheiten und Abbildungen
 
 ## Ergebnisse
 * Referenzkorpus erzeugt
 * Schema für Annotationen ausgearbeitet
-* Entwicklung von Tools zur Verarbeitung
+* Entwicklung von Tools zur Verarbeitung von Korpora
 * Adpositionen im Kontext der Mehrsprachigkeit untersucht
 
 ## Ausblick
