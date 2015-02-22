@@ -48,10 +48,9 @@ include-after:
 * kein standardisiertes Annotationsschema
 
 ### Fokus der Arbeit
-* statistische Modelle statt präskriptiver Regeln
-	* für Abbildungen und Annotationen
-* Gesamtmodell bestehend aus zwei Sprachversionen
 * Spezifizierung eines Annotationsschemas
+* statistisches Modell statt präskriptiver Regeln
+* Gesamtmodell bestehend aus zwei Sprachversionen
 
 # Wissensrepräsentationen
 ## Tokens
@@ -204,15 +203,15 @@ directional:allative: Bewegung in Richtung des Objekts
 
 ## Modell für Abbildungen
 ### Algorithmus
-- **Bayessches Netz**
-    - korrekt klassifiziert: 95,72%
-    - Sensitivität von 'positiv': 85,3%
-- **Regellernen (JRip)**
-    - korrekt klassifiziert: 98,21%
-    - Sensitivität von 'positiv': 70,9%
 - **Entscheidungsbaum** (J48^[Wekas Implementierung von C4.5])
     - korrekt klassifiziert: 98,3093%
     - Sensitivität von 'positiv': 69,8%
+- **Regellernen (JRip)**
+    - korrekt klassifiziert: 98,21%
+    - Sensitivität von 'positiv': 70,9%
+- **Bayessches Netz**
+    - korrekt klassifiziert: 95,72%
+    - Sensitivität von 'positiv': 85,3%
 
 \note{
 	Sensitivität = Richtig-Positiv-Rate, engl. recall
@@ -284,17 +283,6 @@ plArgumentPOS
 | <span style="font-variant: small-caps">adpositions-pl</span> | 47,09% |
 | <span style="font-variant: small-caps">adpositions-de-pl</span> | 62,43% |
 
-## Modell für Annotationen
-### LMT: Beispiel
-```
-Class 20 :
--11.4 +
-[deLemma=mit] * 6.51 +
-[deArgumentPOS=Noun] * -3.53 +
-[deDependencyLemma=beginnen] * 9.24 +
-[plLemma=od] * 7.99
-```
-
 ## Herausforderungen
 ### Tagging
 * wenige morphologische Tagger/Analyser für Deutsch erhältlich
@@ -352,6 +340,17 @@ Class 20 :
 * Kindeinheit $child(e)$ echte Teilmenge von $e$
     - $e \in E$ gdw. $e \neq \emptyset$ und $\forall e_1 \in e : \exists e_2 \in e : |e_1 - e_2| = 1$
 * $\bigcup_{e \in E} e = r$
+
+## Modell für Annotationen
+### LMT: Beispiel
+```
+Class 20 :
+-11.4 +
+[deLemma=mit] * 6.51 +
+[deArgumentPOS=Noun] * -3.53 +
+[deDependencyLemma=beginnen] * 9.24 +
+[plLemma=od] * 7.99
+```
 
 ## Modell für Abbildungen
 | **Feature**         | **Anteil** |
