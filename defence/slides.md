@@ -134,9 +134,26 @@ dargestellt als Baum \\
 Abh. formalisieren Beziehungen zwischen Tokens \\
 Verallgemeinerung von Dependenzstrukturen \\
 Beziehungen \\
-    zwischen Verben und Argumenten \\
-    zwischen Nomen und ihren Modifikatoren \\
+    - zwischen Verben und Argumenten \\
+    - zwischen Nomen und ihren Modifikatoren \\
 verwandt: "bubble structures"; http://gerdes.fr/papiers/avant/bubbles.pdf
+}
+
+## Annotationen
+**Klassen:** Lokativ, Präsenz, Quantifizierung, Referenz, Komparation, Sonstige
+
+### Lokativ
+Er wohnte *in~<span style="font-variant: small-caps">static:adessive</span>~ der Nähe des Bahnhofs*. \
+Kommen Sie bitte *in~<span style="font-variant: small-caps">directional:allative</span>~ mein Büro*.
+
+### Präsenz
+Er begießt die Blumen *mit~<span style="font-variant: small-caps">ornative</span>~ Wasser*. \
+Er begießt die Blumen *mit~<span style="font-variant: small-caps">instrumental</span>~ der Gießkanne*. \
+Sie spielt *mit~<span style="font-variant: small-caps">comitative</span>~ ihrer Freundin*.
+
+\note{
+static:adessive: direkter Kontakt mit einem Objekt \\
+directional:allative: Bewegung in Richtung des Objekts
 }
 
 # Annotierung
