@@ -49,7 +49,7 @@ include-after:
 
 ### Fokus der Arbeit
 * Spezifizierung eines Annotationsschemas
-* statistisches Modell statt präskriptiver Regeln
+* statistisches Modell statt deskriptiver Regeln
 * Gesamtmodell bestehend aus zwei Sprachversionen
 
 # Wissensrepräsentationen
