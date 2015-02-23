@@ -78,7 +78,7 @@ Attribute
 * angelehnt an semantischen Rollen
     - [Peter]~<span style="font-variant: small-caps">Agent</span>~ hit~<span style="font-variant: small-caps">Cause/Impact</span>~ [the ball]~<span style="font-variant: small-caps">Impactee</span>~.
 * Unterschied: bilden Hierarchie
-    - erlaubt spezifischere Abbildungen
+    - erlaubt spezifischere Strukturen
 
 ### Beispiel
 [Peter] [sold] [the [book]] [to [Daniel]] [.]
@@ -175,6 +175,10 @@ directional:allative: Bewegung in Richtung des Objekts
     - Referenzliteratur vorhanden
     - unterschiedliche Sprachfamilien
 
+\note{
+	untersch. Sprachfamilien $\Rightarrow$ Unabhängigkeit der Sprachversionen
+}
+
 ## Prozess
 ![Annotierungsprozess](images/process.pdf)
 
@@ -195,11 +199,10 @@ directional:allative: Bewegung in Richtung des Objekts
 - **Eingabe:** alle Abbildungen des Trainingskorpus
     - falsche Abbildungen werden generiert
 - **Binäre Klasse:** gültige Abbildung?
-- Features ausgewählt unter Berücksichtigung von
+- 11 Features ausgewählt unter Berücksichtigung von
     - struktureller Ähnlichkeit: Satzbau, Verschachtelung
     - grammatikalischer Ähnlichkeit
     - lexikalischer Ähnlichkeit
-- Insgesamt 11 Features
 
 ## Modell für Abbildungen
 ### Algorithmus
@@ -223,7 +226,120 @@ directional:allative: Bewegung in Richtung des Objekts
 - Features gewählt unter Annahme, dass Klasse abhängt von:
     - grammatikalischen Eigenschaften
     - lexikalischem Kontext
+	- 6 Features (``de``) + 4 Features (``pl``)
 - drei Modelle trainiert: ``de``, ``pl``, ``de + pl``
+
+## Modell für Annotationen
+- **J48**
+    - zu starkes Pruning
+    - geringe Tiefe
+    - Klassifikation abhängig von wenigen Features
+- **k-Means**
+    - Clustering
+    - Verfahren nicht für nominale Werte geeignet
+    - erkennt für vorliegende Modelle nur zwei Cluster
+- **LMT**^[*engl.:* Logistic model tree]
+    - Clustering-Ansatz: logistische Regression + Entscheidungsbäume
+    - gute Feature-Selektion und -Gruppierung
+
+## Modell für Annotationen
+### LMT
+
+:\  Präzision aller Modelle im Vergleich
+
+| **Modell** | **LMT** |
+|--------|-----|-----|
+| <span style="font-variant: small-caps">adpositions-de</span> | 53,43% |
+| <span style="font-variant: small-caps">adpositions-pl</span> | 47,09% |
+| <span style="font-variant: small-caps">adpositions-de-pl</span> | 62,43% |
+
+## Herausforderungen
+### Tagging
+* wenige morphologische Tagger/Analyser für Deutsch erhältlich
+* RFTagger lässt sich nicht im Server-Modus verwenden
+* fehlerhafte Datensätze in RFTaggers Modell
+
+### Adpositionen
+- gewählter CLIR-Ansatz erfordert:
+    - korrekte Übersetzungen
+    - vorherige Erstellung von Einheiten und Abbildungen
+
+## Ergebnisse
+* Referenzkorpus erzeugt
+* Schema für Annotationen ausgearbeitet
+* Entwicklung von Tools zur Verarbeitung von Korpora
+* Adpositionen im Kontext der Mehrsprachigkeit untersucht
+
+## Ausblick
+### Prozess
+- zeitaufwändiger Annotationsprozess
+    - kann größtenteils mit Regeln automatisiert werden
+    - UI: on-the-fly Muster lernen und Annotationen vorschlagen
+    - Crowd-sourcing
+- Annotationsschema ausweiten
+- maschinelle Übersetzung für einsprachige Texte
+- weitere Sprachfamilien untersuchen
+
+## Ausblick
+### Anwendungen
+- Adpositionsmodell für Wissensextraktion verwenden
+    - Definitionen, Eigenschaften von Gegenständen
+    - Beziehungen
+
+# Anhang
+## Korpusanalyse
+|  | **Anzahl**   |
+|-----------|--------|
+| Sätze  | 220 |
+| Einheiten | 2892 |
+| Tokens (Deutsch) | 2220 |
+| Tokens (Polnisch) | 1911 |
+| Abgebildete Einheiten | 1187 |
+| Abhängigkeiten | 196 |
+
+## Einheiten
+### Definitionen
+* $S$: Satz als Folge von Tokens
+* $|S|$: Anzahl der Tokens
+* $E$: Menge aller Einheiten in $S$
+* Einheit $e \in E$ Menge benachbarter Positionen
+* Wurzeleinheit $r = \{1, ..., |S|\} \in E$
+* Kindeinheit $child(e)$ echte Teilmenge von $e$
+    - $e \in E$ gdw. $e \neq \emptyset$ und $\forall e_1 \in e : \exists e_2 \in e : |e_1 - e_2| = 1$
+* $\bigcup_{e \in E} e = r$
+
+## Modell für Abbildungen
+| **Feature**         | **Anteil** |
+|---------------------|------------|
+| childrenRatio       | 0,25462    |
+| dictCorrespondences | 0,20784    |
+| depthDiff           | 0,19325    |
+| posSimilarity       | 0,18537    |
+| sourceChildren      | 0,15533    |
+| targetChildren      | 0,14271    |
+| offsetRatio         | 0,04685    |
+| lengthRatio         | 0,02428    |
+| depthRatio          | 0,00678    |
+| orthSimilarity      | 0,00437    |
+| lemmaSimilarity     | 0,00242    |
+
+:\  Korrelation zwischen den Features und der Klasse
+
+## Modell für Abbildungen
+### Bayessches Netz
+:\  Performance des Gesamtmodells
+
+| **Klassifizierung** | **Instanzen** | **Anteil**  |
+|---------------------|---------------|-------------|
+| richtig             | 31650         | 95,7234%    |
+| falsch              | 1414          | 4,2766%     |
+
+:\  Performance der Klassen
+
+| **Klasse**  | **Genauigkeit** | **Sensitivität** |
+|-------------|-----------------|------------------|
+| negativ     | 99,4%           | 96,1%            |
+| positiv     | 45%             | 85,3%            |
 
 ## Modell für Annotationen
 ### Deutsch
@@ -260,88 +376,6 @@ plArgumentPOS
   ~ POS des Arguments
 
 ## Modell für Annotationen
-- **J48**
-    - zu starkes Pruning
-    - geringe Tiefe
-    - Klassifikation abhängig von wenigen Features
-- **k-Means**
-    - Clustering
-    - Verfahren nicht für nominale Werte geeignet
-    - erkennt für vorliegende Modelle nur zwei Cluster
-- **LMT**^[*engl.:* Logistic model tree]
-    - Clustering-Ansatz: logistische Regression + Entscheidungsbäume
-    - gute Feature-Selektion und -Gruppierung
-
-## Modell für Annotationen
-### LMT
-
-:\  Präzision aller Modelle im Vergleich
-
-| **Modell** | **LMT** |
-|--------|-----|-----|
-| <span style="font-variant: small-caps">adpositions-de</span> | 53,43% |
-| <span style="font-variant: small-caps">adpositions-pl</span> | 47,09% |
-| <span style="font-variant: small-caps">adpositions-de-pl</span> | 62,43% |
-
-## Herausforderungen
-### Tagging
-* wenige morphologische Tagger/Analyser für Deutsch erhältlich
-* RFTagger lässt sich nicht im Server-Modus verwenden
-* fehlerhafte Datensätze in RFTaggers Modell
-    - falscher Zeichensatz
-    - falscher Kasus
-
-### Adpositionen
-- gewählter CLIR-Ansatz erfordert:
-    - korrekte Übersetzungen
-    - vorherige Erstellung von Einheiten und Abbildungen
-
-## Ergebnisse
-* Referenzkorpus erzeugt
-* Schema für Annotationen ausgearbeitet
-* Entwicklung von Tools zur Verarbeitung von Korpora
-* Adpositionen im Kontext der Mehrsprachigkeit untersucht
-
-## Ausblick
-### Prozess
-- zeitaufwändiger Annotationsprozess
-    - kann größtenteils mit Regeln automatisiert werden
-    - UI: on-the-fly Muster lernen und Annotationen vorschlagen
-    - Crowd-sourcing
-- Inkonsistenzen finden
-- Annotationsschema ausweiten
-- weitere Sprachen untersuchen
-- Google Translate für einsprachige Texte einsetzen
-
-## Ausblick
-### Anwendungen
-- Adpositionsmodell für Wissensextraktion verwenden
-    - Definitionen, Eigenschaften von Gegenständen
-    - Beziehungen
-
-# Anhang
-## Korpusanalyse
-|  | **Anzahl**   |
-|-----------|--------|
-| Sätze  | 220 |
-| Einheiten | 2892 |
-| Tokens (Deutsch) | 2220 |
-| Tokens (Polnisch) | 1911 |
-| Abgebildete Einheiten | 1187 |
-| Abhängigkeiten | 196 |
-
-## Einheiten
-### Definitionen
-* $S$: Satz als Folge von Tokens
-* $|S|$: Anzahl der Tokens
-* $E$: Menge aller Einheiten in $S$
-* Einheit $e \in E$ Menge benachbarter Positionen
-* Wurzeleinheit $r = \{1, ..., |S|\} \in E$
-* Kindeinheit $child(e)$ echte Teilmenge von $e$
-    - $e \in E$ gdw. $e \neq \emptyset$ und $\forall e_1 \in e : \exists e_2 \in e : |e_1 - e_2| = 1$
-* $\bigcup_{e \in E} e = r$
-
-## Modell für Annotationen
 ### LMT: Beispiel
 ```
 Class 20 :
@@ -351,37 +385,4 @@ Class 20 :
 [deDependencyLemma=beginnen] * 9.24 +
 [plLemma=od] * 7.99
 ```
-
-## Modell für Abbildungen
-| **Feature**         | **Anteil** |
-|---------------------|------------|
-| childrenRatio       | 0,25462    |
-| dictCorrespondences | 0,20784    |
-| depthDiff           | 0,19325    |
-| posSimilarity       | 0,18537    |
-| sourceChildren      | 0,15533    |
-| targetChildren      | 0,14271    |
-| offsetRatio         | 0,04685    |
-| lengthRatio         | 0,02428    |
-| depthRatio          | 0,00678    |
-| orthSimilarity      | 0,00437    |
-| lemmaSimilarity     | 0,00242    |
-
-:\  Korrelation zwischen den Features und der Klasse
-
-## Modell für Abbildungen
-### Bayessches Netz
-:\  Performance des Gesamtmodells
-
-| **Klassifizierung** | **Instanzen** | **Anteil**  |
-|---------------------|---------------|-------------|
-| richtig             | 31650         | 95,7234%    |
-| falsch              | 1414          | 4,2766%     |
-
-:\  Performance der Klassen
-
-| **Klasse**  | **Genauigkeit** | **Sensitivität** |
-|-------------|-----------------|------------------|
-| negativ     | 99,4%           | 96,1%            |
-| positiv     | 45%             | 85,3%            |
 
